@@ -6,6 +6,12 @@ Tsuki’s TV Show is a game of psychological horror and mascot horror, created f
 
 This game is just a demo, so it can be seen that some features are missing, and also that I cannot guarantee that it is bug free.
 
+## Download the game
+
+You can go directly to download the game from itch.io or play it from gd.games
+itch.io -> https://quetzalcoutl.itch.io/tsukis-tv-show
+gd.games -> https://gd.games/quetzalcoutldev/tsuki-s-tv-show
+
 ## Installing from source
 
 First of all, you need to have GDevelop 5.2.172 or higher installed
