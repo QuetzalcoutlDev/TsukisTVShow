@@ -1,0 +1,5256 @@
+{
+  "firstLayout": "init",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.dazzleteam.tsukistvshow",
+    "pixelsRounding": true,
+    "projectUuid": "aba8ccf8-69b2-4f4c-94a2-99a0e5728587",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "0.1.0",
+    "name": "Tsuki's TV Show",
+    "description": "Tsuki’s TV Show is a game of psychological horror and mascot horror, created for the Monarca Game Jam 2023",
+    "author": "Dazzle Team",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "/home/quetzalcoutl/Documents/Projects/GDevelop projects/export_Tsukis/pc",
+    "maxFPS": 60,
+    "minFPS": 20,
+    "verticalSync": false,
+    "platformSpecificAssets": {
+      "android-icon-144": "android-icon-144.png",
+      "android-icon-192": "android-icon-192.png",
+      "android-icon-36": "android-icon-36.png",
+      "android-icon-48": "android-icon-48.png",
+      "android-icon-72": "android-icon-72.png",
+      "android-icon-96": "android-icon-96.png",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "Icon.jpg",
+      "ios-icon-100": "ios-icon-100.png",
+      "ios-icon-1024": "ios-icon-1024.png",
+      "ios-icon-114": "ios-icon-114.png",
+      "ios-icon-120": "ios-icon-120.png",
+      "ios-icon-144": "ios-icon-144.png",
+      "ios-icon-152": "ios-icon-152.png",
+      "ios-icon-167": "ios-icon-167.png",
+      "ios-icon-180": "ios-icon-180.png",
+      "ios-icon-20": "ios-icon-20.png",
+      "ios-icon-29": "ios-icon-29.png",
+      "ios-icon-40": "ios-icon-40.png",
+      "ios-icon-50": "ios-icon-50.png",
+      "ios-icon-57": "ios-icon-57.png",
+      "ios-icon-58": "ios-icon-58.png",
+      "ios-icon-60": "ios-icon-60.png",
+      "ios-icon-72": "ios-icon-72.png",
+      "ios-icon-76": "ios-icon-76.png",
+      "ios-icon-80": "ios-icon-80.png",
+      "ios-icon-87": "ios-icon-87.png",
+      "liluo-thumbnail": "gd-banner.jpg"
+    },
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": false
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": false
+    },
+    "authorIds": [
+      "bLei6mp8FMXlGD75f0bd33VOBoL2"
+    ],
+    "authorUsernames": [
+      "QuetzalcoutlDev"
+    ],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/stage.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/stage.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/CameraObject.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/CameraObject.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/vignette.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/vignette.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/fonts/VarelaRound.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/VarelaRound.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/tv_logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/tv_logo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/black.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/black.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/7.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/8.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/static/9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/static/9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0009.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0010.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0011.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/kids/kids_0012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/kids/kids_0012.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/fonts/PressStart2P-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/PressStart2P-Regular.ttf",
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/DotGothic16-Regular.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/DotGothic16-Regular.ttf",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/tsuki-creepy.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/tsuki-creepy.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/idle/tsuki_idle_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/idle/tsuki_idle_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/idle/tsuki_idle_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/idle/tsuki_idle_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/idle/tsuki_idle_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/idle/tsuki_idle_0003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/idle/tsuki_idle_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/idle/tsuki_idle_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/idle/tsuki_idle_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/idle/tsuki_idle_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/idle/tsuki_idle_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/idle/tsuki_idle_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/walk/tsuki_walk_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/walk/tsuki_walk_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/walk/tsuki_walk_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/walk/tsuki_walk_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/walk/tsuki_walk_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/walk/tsuki_walk_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/walk/tsuki_walk_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/walk/tsuki_walk_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/walk/tsuki_walk_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/walk/tsuki_walk_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/walk/tsuki_walk_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/walk/tsuki_walk_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/hi/tsuki_hi_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/hi/tsuki_hi_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/hi/tsuki_hi_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/hi/tsuki_hi_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/hi/tsuki_hi_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/hi/tsuki_hi_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/hi/tsuki_hi_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/hi/tsuki_hi_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/hi/tsuki_hi_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/hi/tsuki_hi_0005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/hi/tsuki_hi_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/hi/tsuki_hi_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0007.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/good/tsuki_good_0007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/good/tsuki_good_0007.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/creepy/tsuki_creepy_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/creepy/tsuki_creepy_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/creepy/tsuki_creepy_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/creepy/tsuki_creepy_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/creepy/tsuki_creepy_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/creepy/tsuki_creepy_0003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/creepy/tsuki_creepy_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/creepy/tsuki_creepy_0004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/no/tsuki_no_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/no/tsuki_no_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/no/tsuki_no_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/no/tsuki_no_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/no/tsuki_no_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/no/tsuki_no_0003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/no/tsuki_no_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/no/tsuki_no_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/no/tsuki_no_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/no/tsuki_no_0005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/no/tsuki_no_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/no/tsuki_no_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angryidle/tsuki_angryidle_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/angrywalk/tsuki_angrywalk_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/alfombra.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/alfombra.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/estante.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/estante.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/estante_amarillo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/estante_amarillo.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/silla.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/silla.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/mesa.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/mesa.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/mesita.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/mesita.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/caballete.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/caballete.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/piso.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/piso.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/mesitadenoche.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/mesitadenoche.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/deco/repisa.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/deco/repisa.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/cursor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/cursor.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/puerta.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/puerta.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/back.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/vignette_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/vignette_2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/fonts/URWBookman-Light.otf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/URWBookman-Light.otf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_general_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_general_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_general_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_general_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_general_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_general_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/fonts/vcr.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "assets/fonts/vcr.ttf",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/2.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/6.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/11.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/14.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/16.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/17.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/19.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/20.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/21.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/22.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/23.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/24.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/25.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/26.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/27.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/28.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/29.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/glitch/30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/glitch/30.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/vhs-render-sound.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/vhs-render-sound.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/no-signal.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/no-signal.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/monarca.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/monarca.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/logo.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_github_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_github_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_github_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_github_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_github_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_github_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_itch_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_itch_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_itch_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_itch_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_itch_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_itch_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/check_ui_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/check_ui_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/check_ui_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/check_ui_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/toggle_button_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/toggle_button_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/toggle_button_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/toggle_button_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/toggle_button_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/toggle_button_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/toggle_button_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/toggle_button_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/toggle_button_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/toggle_button_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/toggle_button_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/toggle_button_0006.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/configbar_thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/configbar_thumb.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/configbar_fill.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/configbar_fill.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/configbar_border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/configbar_border.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
+          "name": "Square White Slider Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
+          "name": "Square White Slider Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Square White Slider Thumb.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Square White Slider Thumb.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
+          "name": "Square White Slider Thumb.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_delete_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_delete_0004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_delete_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_delete_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_delete_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_delete_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_x_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_x_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_x_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_x_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_x_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_x_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_mastodon_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_mastodon_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_mastodon_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_mastodon_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_mastodon_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_mastodon_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_youtube_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_youtube_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_youtube_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_youtube_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_youtube_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_youtube_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/textbox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/textbox.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/namebox.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/namebox.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/cps.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/cps.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/cap1.json",
+        "kind": "json",
+        "metadata": "{\"extension\":\".json\"}",
+        "name": "cap1",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/dialogs/spanish/cap1.json",
+        "kind": "json",
+        "metadata": "{\"localFilePath\":\"assets/dialogs/spanish/cap1.json\",\"extension\":\".json\"}",
+        "name": "assets/dialogs/spanish/cap1.json",
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/text_typing.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/text_typing.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/kids_cheering.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/kids_cheering.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/drumroll.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/drumroll.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/afternoon.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/afternoon.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/my_tv_show_menu-theme.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/my_tv_show_menu-theme.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/points.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/points.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/rules_paper_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/rules_paper_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/rules_paper_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/rules_paper_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/paper.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/paper.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/paperTip.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/paperTip.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/carnival.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/carnival.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_0019.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_0019.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_0020.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_0020.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/social/boton_ui_circle_0021.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/social/boton_ui_circle_0021.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cono_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cono_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cono_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cono_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/music_box_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/music_box_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/pelota_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/pelota_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/pelota_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/pelota_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/muñeca_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/muñeca_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/muñeca_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/muñeca_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/oso_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/oso_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/oso_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/oso_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cubos_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cubos_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cubos_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cubos_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/roger_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/roger_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/roger_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/roger_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/flor_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/flor_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/flor_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/flor_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/palma_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/palma_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/palma_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/palma_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/vhs_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/vhs_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/vhs_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/vhs_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/pelota_grande_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/pelota_grande_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/pelota_grande_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/pelota_grande_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/oso_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/oso_2_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/oso_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/oso_2_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cubos_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cubos_2_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cubos_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cubos_2_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/flor_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/flor_2_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/flor_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/flor_2_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/arbol_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/arbol_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/arbol_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/arbol_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/pelota_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/pelota_2_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/pelota_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/pelota_2_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/muñeca_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/muñeca_2_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/muñeca_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/muñeca_2_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/music_box_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/music_box_2_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/music_box_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/music_box_2_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cono_2_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cono_2_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/cono_2_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/cono_2_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/RGB",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/RGB",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/vignetteTVEffect.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/vignetteTVEffect.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/addPoint.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/addPoint.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/stage/objects/music_box_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/stage/objects/music_box_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/sad/tsuki_sad_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/sad/tsuki_sad_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/sad/tsuki_sad_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/sad/tsuki_sad_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/sad/tsuki_sad_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/sad/tsuki_sad_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/sad/tsuki_sad_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/sad/tsuki_sad_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/sad/tsuki_sad_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/sad/tsuki_sad_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/sad/tsuki_sad_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/sad/tsuki_sad_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/inflar/tsuki_inflar_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/inflar/tsuki_inflar_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/tsuki/inflar/tsuki_inflar_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/tsuki/inflar/tsuki_inflar_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0006.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0007.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0009.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0010.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/sprites/globo/globo_0011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/sprites/globo/globo_0011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/sounds/TextShow.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/TextShow.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/VHSCasetteIn.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/VHSCasetteIn.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/dialogs/spanish/cap2.json",
+        "kind": "json",
+        "metadata": "{\"localFilePath\":\"assets/dialogs/spanish/cap2.json\",\"extension\":\".json\"}",
+        "name": "assets/dialogs/spanish/cap2.json",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/1.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/1.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/2.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/2.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/3.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/3.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/4.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/4.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/5.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/5.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/7.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/7.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/8.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/8.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/9.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/9.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/dark_relaxing.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/dark_relaxing.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/drawings/6.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/drawings/6.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar Green Fill Bar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar Green Fill Bar.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/4037e5e9b8a1ede7cb20a326256ce5d9e9a5d94715303743595e97375ceaabaf_Flat Bar Green Fill Bar.png",
+          "name": "Flat Bar Green Fill Bar.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Flat Bar White Border.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Flat Bar White Border.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
+          "name": "Flat Bar White Border.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/barFill.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/barFill.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/barBorder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/barBorder.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/afternoon_dark_version.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/afternoon_dark_version.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/carnival_dark_version.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/carnival_dark_version.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/pop2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/pop2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/balloon-pop.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/balloon-pop.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/sound/sounds_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/sound/sounds_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/sound/sounds_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/sound/sounds_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/sound/sounds_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/sound/sounds_0003.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/sound/sounds_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/sound/sounds_0004.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/sound/sounds_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/sound/sounds_0005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/music/vhs3/1.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/vhs3/1.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/baby-cries.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/baby-cries.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/fireworks.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/fireworks.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/music/vhs3/2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/music/vhs3/2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/girl_scream.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/girl_scream.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/inflated/1.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/inflated/1.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "assets/sounds/inflated/2.ogg",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets/sounds/inflated/2.ogg",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/pause_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/pause_0001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/pause_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/pause_0002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/box_alpha.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/box_alpha.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_general_0004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_general_0004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_general_0005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_general_0005.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_general_0006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_general_0006.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/pauseButton_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/pauseButton_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/pauseButton_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/pauseButton_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/pauseButton_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/pauseButton_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_inflated_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_inflated_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_inflated_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_inflated_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_inflated_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_inflated_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/dialogs/english/cap2.json",
+        "kind": "json",
+        "metadata": "{\"localFilePath\":\"assets/dialogs/english/cap2.json\",\"extension\":\".json\"}",
+        "name": "assets/dialogs/english/cap2.json",
+        "userAdded": true
+      },
+      {
+        "disablePreload": false,
+        "file": "assets/dialogs/english/cap1.json",
+        "kind": "json",
+        "metadata": "{\"localFilePath\":\"assets/dialogs/english/cap1.json\",\"extension\":\".json\"}",
+        "name": "assets/dialogs/english/cap1.json",
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "gd-banner.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "gd-banner.jpg",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "desktop-icon-512.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "desktop-icon-512.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-192.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-192.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-144.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-96.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-96.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-72.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-48.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-icon-36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-icon-36.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "android-windowSplashScreenAnimatedIcon.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "android-windowSplashScreenAnimatedIcon.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-1024.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-1024.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-180.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-180.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-167.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-167.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-152.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-152.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-144.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-144.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-120.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-120.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-114.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-114.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-100.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-100.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-87.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-87.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-80.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-80.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-76.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-76.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-72.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-72.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-60.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-58.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-57.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-50.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-40.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-29.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "ios-icon-20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "ios-icon-20.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Icon.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Icon.jpg",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/view.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/view.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/go_back.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/go_back.png",
+        "smoothed": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "vignette",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/vignette.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 484,
+                        "y": 0
+                      },
+                      {
+                        "x": 484,
+                        "y": 272
+                      },
+                      {
+                        "x": 0,
+                        "y": 272
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "vignette2",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/vignette_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 0
+                      },
+                      {
+                        "x": 1280,
+                        "y": 720
+                      },
+                      {
+                        "x": 0,
+                        "y": 720
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "bold": false,
+      "italic": false,
+      "name": "fps",
+      "smoothed": true,
+      "tags": "",
+      "type": "TextObject::Text",
+      "underlined": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "0;0;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "FPSDisplayer",
+          "type": "FPS::FPSDisplayer",
+          "prefix": "FPS: ",
+          "DecimalDigits": 0
+        }
+      ],
+      "string": "FPS: 0",
+      "font": "assets/fonts/VarelaRound.ttf",
+      "textAlignment": "left",
+      "characterSize": 22,
+      "color": {
+        "b": 255,
+        "g": 255,
+        "r": 255
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "black",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/black.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "cursor",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/cursor.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 62,
+                        "y": 0
+                      },
+                      {
+                        "x": 62,
+                        "y": 60
+                      },
+                      {
+                        "x": 0,
+                        "y": 60
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "static",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "BlendingMode",
+          "name": "Effect",
+          "doubleParameters": {
+            "blendmode": 1,
+            "opacity": 1
+          },
+          "stringParameters": {},
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/static/9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 0
+                      },
+                      {
+                        "x": 540,
+                        "y": 396
+                      },
+                      {
+                        "x": 0,
+                        "y": 396
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "glitch",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/0.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/4.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/5.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/6.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/7.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/8.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/9.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/10.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/11.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/12.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/13.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/14.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/15.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/16.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/17.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/18.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/19.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/20.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/21.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/22.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/23.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/24.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/25.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/26.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/27.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/28.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/29.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/glitch/30.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 0
+                      },
+                      {
+                        "x": 200,
+                        "y": 200
+                      },
+                      {
+                        "x": 0,
+                        "y": 200
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "black_alpha",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets/gui/box_alpha.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsGroups": [],
+  "variables": [
+    {
+      "name": "game",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "autoNextDialogTime",
+          "type": "number",
+          "value": 8
+        },
+        {
+          "folded": true,
+          "name": "defaultKeys",
+          "type": "structure",
+          "children": [
+            {
+              "name": "minigames",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "action",
+                  "type": "string",
+                  "value": "Space"
+                },
+                {
+                  "name": "move",
+                  "type": "array",
+                  "children": [
+                    {
+                      "type": "string",
+                      "value": "Left"
+                    },
+                    {
+                      "type": "string",
+                      "value": "Right"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "nextDialog",
+              "type": "string",
+              "value": "Return"
+            },
+            {
+              "name": "options",
+              "type": "array",
+              "children": [
+                {
+                  "folded": true,
+                  "type": "string",
+                  "value": "Num1"
+                },
+                {
+                  "type": "string",
+                  "value": "Num2"
+                },
+                {
+                  "type": "string",
+                  "value": "Num3"
+                },
+                {
+                  "type": "string",
+                  "value": "Num4"
+                }
+              ]
+            },
+            {
+              "name": "pause",
+              "type": "string",
+              "value": "Escape"
+            },
+            {
+              "name": "skipText",
+              "type": "string",
+              "value": "x"
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "fps",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "folded": true,
+          "name": "fullscreen",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "language",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "folded": true,
+          "name": "musicVolume",
+          "type": "number",
+          "value": 90
+        },
+        {
+          "name": "soundVolume",
+          "type": "number",
+          "value": 90
+        },
+        {
+          "folded": true,
+          "name": "visuals",
+          "type": "structure",
+          "children": [
+            {
+              "name": "shaders",
+              "type": "boolean",
+              "value": true
+            },
+            {
+              "name": "vignetteTV",
+              "type": "boolean",
+              "value": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "folded": true,
+      "name": "demo",
+      "type": "boolean",
+      "value": true
+    },
+    {
+      "folded": true,
+      "name": "data",
+      "type": "structure",
+      "children": [
+        {
+          "folded": true,
+          "name": "VHSNumberTake",
+          "type": "array",
+          "children": []
+        },
+        {
+          "name": "allowContinue",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "cap",
+          "type": "number",
+          "value": 1
+        },
+        {
+          "folded": true,
+          "name": "firstGame",
+          "type": "boolean",
+          "value": true
+        },
+        {
+          "name": "points",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "name": "TakeVHS",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "folded": true,
+      "name": "currentScene",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "firstStart",
+      "type": "boolean",
+      "value": true
+    }
+  ],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/init"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/splashscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/menu"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/loading_and_tips"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/vhs"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/selectlanguage"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/demo"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game_over"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/continue"
+    }
+  ],
+  "externalEvents": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/globals"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalEvents/globalsettings"
+    }
+  ],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/playaudiowithstring"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/autotyping"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspriteslider"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritecontinuousbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/spritetoggleswitch"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/getpropertiesdata"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/discordrichpresence"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/fps"
+    }
+  ],
+  "externalLayouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/vignette_static"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/config"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/about"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/configkeys"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/externalLayouts/menu_yes_or_no"
+    }
+  ],
+  "externalSourceFiles": []
+}

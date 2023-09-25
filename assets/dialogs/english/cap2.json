@@ -1,0 +1,452 @@
+[
+	{
+		"title": "Start",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<tsuki_changeanim>>\n<<tsuki_anim hi>>\nHi kids!!!\n<<tsuki_anim happy>>\nWelcome back to this wonderful program.\nAs you know, I am Tsuki and I am your beloved host.\nNo?\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nSecond broadcast and we come with more fun for you.\n<<kids_normal>>\n<<tsuki_anim idle>>\nWhat activity do we do first?\nBlow up balloons?\nSearch for objects?\nWe can do whatever you want.\n<<tsuki_anim idle>>\nThey are ready?\n<<kids_yey>>\n<<kids_happy>>\n<<pause 2>>\n<<tsuki_anim happy>>\n<<stop_music>>\nI love that mood.\n<<kids_normal>>\nWell let's get started.\n<<kids_normal>>\n<<play_music_a>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<end>> end",
+		"position": {
+			"x": 234,
+			"y": 206
+		},
+		"colorID": 1
+	},
+	{
+		"title": "activities",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\nWell...\n<<tsuki_anim idle>>\n<<option_activities>>\n<<tsuki_noflip>>\nWhat activities do you want to do?\n<<none>>",
+		"position": {
+			"x": 474,
+			"y": 208
+		},
+		"colorID": 2
+	},
+	{
+		"title": "charla0",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nSometimes watching our favorite cartoons is something that helps us entertain ourselves.\nBut finding one we like can be complicated.\nSometimes we just don't know which one to watch.\n<<tsuki_flip>>\nAnd with the large number of cartoons there are.\nWell, it's very difficult to know which one to watch.\nHe he.\n<<tsuki_noflip>>\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 759,
+			"y": 197
+		},
+		"colorID": 3
+	},
+	{
+		"title": "comercialpause",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nI have bad news, kids.\n<<tsuki_noflip>>\nBut it's time for a commercial break.\nBut don't worry...\nWe'll see you in a few minutes.\n<<commercialPause>>\n<<end>> end",
+		"position": {
+			"x": 1236,
+			"y": 196
+		},
+		"colorID": 5
+	},
+	{
+		"title": "charla1",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nMany are afraid of the dark, right?\n<<pause 2>>\nCome on, don't be sorry.\n<<tsuki_anim happy>>\nI was afraid of the dark when I was little.\nBeing afraid of her is normal.\n<<tsuki_flip>>\n<<tsuki_anim idle>>\nBut they don't really have to fear him.\n<<tsuki_anim happy>>\nAlthough it is quite uncomfortable to be in the dark.\n<<tsuki_anim idle>>\n<<tsuki_noflip>>\nNothing can harm us.\nThose monsters that we think are in it are just a figment of our imagination. [color=#b561a8]That's what they make us believe. [/color]\nAs children we tend to misinterpret what is in the dark.\n<<tsuki_anim happy>>\nThey don't have to be afraid.\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 762,
+			"y": 422
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla2",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nDo many of you like the moon?\n<<tsuki_anim happy>>\nThat celestial body that illuminates our night.\nThe moon is incredible.\n<<tsuki_anim idle>>\nMany admire her.\n<<tsuki_anim happy>>\nI am one of those people.\n<<tsuki_anim idle>>\nDo you feel admiration for the moon too?\n<<tsuki_anim happy>>\nIt's really fascinating to see.\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 762,
+			"y": 644
+		},
+		"colorID": 3
+	},
+	{
+		"title": "searchobjectsStart",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nDo you want to play fetch?\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\n<<tsuki_anim happy>>\nThat seems fine to me.\n<<kids_normal>>\n<<tsuki_anim idle>>\nLet's see if they find them all.\n<<kids_normal>>\n<<tsuki_anim idle>>\n<<startSearch>> end",
+		"position": {
+			"x": 2166,
+			"y": 204
+		},
+		"colorID": 2
+	},
+	{
+		"title": "object0",
+		"tags": "",
+		"body": "<<object_name oso>>\nFurry and pretty.\nDark in color and pretty eyes.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2425,
+			"y": 209
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object1",
+		"tags": "",
+		"body": "<<object_name flor_azul>>\nBlue like the sky.\nWith a circle in its center the color of the sun.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2425,
+			"y": 441
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object2",
+		"tags": "",
+		"body": "<<object_name pelota_grande>>\nRound and big.\nAnd we like to make it bounce.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2421,
+			"y": 670
+		},
+		"colorID": 6
+	},
+	{
+		"title": "goodSearch",
+		"tags": "",
+		"body": "<<tsuki_anim good>>\n<<objectCorrect>>\nVery well done.\n<<tsuki_anim happy>>\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nLet's see if you can guess the next one.\n<<kids_normal>>\n<<tsuki_anim idle>>\n<<continueGame>> end",
+		"position": {
+			"x": 2701,
+			"y": 209
+		},
+		"colorID": 4
+	},
+	{
+		"title": "badSearch",
+		"tags": "",
+		"body": "<<tsuki_anim idle>>\nToo bad, time is up.\nLet's see if you can guess the next one.\n<<tsuki_anim idle>>\n<<continueGame>> end",
+		"position": {
+			"x": 2700,
+			"y": 442
+		},
+		"colorID": 7
+	},
+	{
+		"title": "incorrectSearch",
+		"tags": "",
+		"body": "<<tsuki_anim no>>\nI'm sorry but that's not the item I'm looking for.\n<<tsuki_anim idle>>\nLet's see if you can guess the next one.\n<<continueGame>> end",
+		"position": {
+			"x": 2703,
+			"y": 666
+		},
+		"colorID": 1
+	},
+	{
+		"title": "object3",
+		"tags": "",
+		"body": "<<object_name muneca_azul>>\nPretty and straight hair.\nBlue like the sea is her dress.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2421,
+			"y": 885
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object4",
+		"tags": "",
+		"body": "<<object_name cono>> \nTurquoise it is.\nIts shape is like an upside-down ice cream cookie.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2424,
+			"y": 1102
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object5",
+		"tags": "",
+		"body": "<<object_name oso_polar>>\nHe likes the cold.\nAnd its fur is like snow.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2425,
+			"y": 1327
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object6",
+		"tags": "",
+		"body": "<<object_name music_box>>\nBeautiful melodies it plays.\nBut for this a hand must be turned.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2429,
+			"y": 1562
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object7",
+		"tags": "",
+		"body": "<<object_name roger>>\nIt goes [i]'quack quack'[/i].\nAnd his name is Roger.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2429,
+			"y": 1798
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object8",
+		"tags": "",
+		"body": "<<object_name palma>>\nRed it is.\nAnd it seems that he greets us.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2429,
+			"y": 2019
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object9",
+		"tags": "",
+		"body": "<<object_name cubos>>\nBlue, yellow, red and green.\nThey are on top of each other.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2432,
+			"y": 2240
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object10",
+		"tags": "",
+		"body": "<<object_name pelota>>\nIt has 5 colors.\nAnd round it is.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2432,
+			"y": 2469
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object11",
+		"tags": "",
+		"body": "<<object_name flor_rosa>> \nPink and happy it is.\nIts root is green.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2429,
+			"y": 2706
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object12",
+		"tags": "",
+		"body": "<<object_name muneca>>\nBlonde she is.\nAnd her dress is fuchsia.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2433,
+			"y": 2965
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object13",
+		"tags": "",
+		"body": "<<object_name cono_rosa>> \nMagenta is its color.\nIts base is large but its tip is thin.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2443,
+			"y": 3193
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object14",
+		"tags": "",
+		"body": "<<object_name music_box_2>>\nTheir music is pleasant to the ear.\nTurquoise is its little box, and a pink note is painted.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2439,
+			"y": 3417
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object15",
+		"tags": "",
+		"body": "<<object_name arbol>>\nGreen is his cup.\nBrown is its trunk.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2436,
+			"y": 3635
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object16",
+		"tags": "",
+		"body": "<<object_name pelota_morada>>\nFuchsia and purple are its colors.\nOn the beach it is a source of fun.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2433,
+			"y": 3864
+		},
+		"colorID": 6
+	},
+	{
+		"title": "object17",
+		"tags": "",
+		"body": "<<object_name cubos_2>>\n4 are.\nRed, orange, pink and turquoise are its colors.\n<<object_search>>\nWhat object is it?\n<<end>>",
+		"position": {
+			"x": 2428,
+			"y": 4075
+		},
+		"colorID": 6
+	},
+	{
+		"title": "finishSearch",
+		"tags": "",
+		"body": "Well, I hope you had fun.\n<<tsuki_anim happy>>\nLet's continue looking for objects again.\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 0>>\n<<end>> end",
+		"position": {
+			"x": 3179,
+			"y": 211
+		},
+		"colorID": 8
+	},
+	{
+		"title": "goodendSearch",
+		"tags": "",
+		"body": "<<tsuki_anim good>>\n<<objectCorrect>>\nVery well done.\n<<kids_normal>>\n<<tsuki_anim idle>>\n<<continueGame>> end",
+		"position": {
+			"x": 2940,
+			"y": 211
+		},
+		"colorID": 4
+	},
+	{
+		"title": "badendSearch",
+		"tags": "",
+		"body": "<<tsuki_anim idle>>\nToo bad, time is up.\n<<tsuki_anim idle>>\n<<continueGame>> end",
+		"position": {
+			"x": 2943,
+			"y": 434
+		},
+		"colorID": 7
+	},
+	{
+		"title": "incorrectendSearch",
+		"tags": "",
+		"body": "<<tsuki_anim no>>\nI'm sorry but that's not the item I'm looking for.\n<<tsuki_anim idle>>\n<<continueGame>> end",
+		"position": {
+			"x": 2943,
+			"y": 667
+		},
+		"colorID": 1
+	},
+	{
+		"title": "story0",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nHave you heard the story of the ugly duckling?\n<<pause 2>>\nNo?\nWell, let me tell you.\nLet me tell you his story.\n<<tsuki_flip>>\nOne day, a goose laid some eggs, but there was one of them that was much bigger than the rest.\nIn that egg was a duck whose appearance made him look different from his brothers.\n<<tsuki_noflip>>\n'Ugly' is what they called the duck whose appearance made him look different from the others.\nOne day the mother goose takes her children to a farm.\nBut the chickens, pigs and animals that lived there mocked him for his appearance.\n'Ugly' they called him, pecked him and laughed.\nEven his mother didn't love him.\n'Ugly' is what they called the duckling who was not like his brothers, he could only get away from his family.\nWithout a fixed direction, he just walked away from that place where he was not accepted for his appearance.\nOn his way, he met a little mouse who became his friend regardless of his appearance.\n<<tsuki_flip>>\nThey chatted and laughed.\nThe duckling and the mouse became inseparable.\nWithout caring about his appearance, the little mouse was at his side.\nAs time went by, 'Ugly' was what they called the duckling that was rejected by others.\nIt grew and grew.\n<<tsuki_noflip>>\nBut something had changed, that's how he felt.\nFor some reason the swans on the lakes no longer found it strange.\nThey didn't even laugh at him.\n'Why is that?' he wondered.\nOne day when he and the mouse were at a lake, the duckling saw his reflection for the first time in a long time.\nAnd he realized something incredible.\nShe had turned into a beautiful swan.\nExcited by this he just cried with joy.\nThe little mouse knew about her change.\n<<tsuki_flip>>\nBut she simply told him.\n'I've never cared what you looked like.'\nWell, I think I should leave it here.\n<<tsuki_anim happy>>\nAlthough I didn't tell you the original version, that's the one I know.\nHe he.\nThey like me?\n<<tsuki_noflip>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 5>>\n<<end>> end",
+		"position": {
+			"x": 1004,
+			"y": 431
+		},
+		"colorID": 4
+	},
+	{
+		"title": "story1",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nDo you know the story of the tortoise and the hare?\nWell, it's the story of how a slow tortoise beat a fast hare.\nAnd it goes like this.\nOne day, a tortoise and a hare were talking.\nDuring that conversation, the hare at one point said...\n<<tsuki_flip>>\n[i]'We hares are very fast, I don't think anyone can beat us in a race'[/i]\nTo this the turtle responded...\n[i]'I can beat you in a race.'[/i]\n<<tsuki_noflip>>\nThe hare, upon hearing that, simply laughed.\n[i]'Hahaha, a slow turtle like you wouldn't be able to beat me'[/i]\nThe turtle, so calm, simply responded.\n[i]'I challenge you to a race.'[/i]\n[i]'Let's see who is faster.'[/i]\nThe hare confidently accepted, because according to her a tortoise would not be able to beat him.\n<<tsuki_flip>>\nThe challenge is...\n'Whoever reaches the tree 15 minutes from here first wins'\nSaid the hare.­\nThen, the challenge began.\nOn your marks, ready and out...\n<<tsuki_noflip>>\nThe hare took off, while the tortoise started at a slow pace.\nRunning and running, the hare got so far away that he lost sight of the tortoise.\n'It is assured that I will be the winner'\nSaid the hare.\nSo confident, she decided to take a nap.\n<<tsuki_flip>>\nThe tortoise came to where the hare was sleeping.\nAnd he continued on his way.\nUpon waking up, the confident hare continued on his way to the tree.\nBut when he arrived he realized that the turtle had beaten him.\nA tortoise showed that he could beat a hare.\n<<tsuki_noflip>>\nAlthough I didn't tell you the original version, it's more or less the same.\nI hope you liked it.\n//<<play_music_a>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 5>>\n<<end>> end",
+		"position": {
+			"x": 1008,
+			"y": 659
+		},
+		"colorID": 4
+	},
+	{
+		"title": "storySelect",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nWhat story do you want to hear?\n<<none>>",
+		"position": {
+			"x": 1004,
+			"y": 200
+		},
+		"colorID": 4
+	},
+	{
+		"title": "charla3",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nThe beaches are undoubtedly truly incredible places.\nIt helps us cool down and even more so on these hot days.\nAlthough many do not simply go to the beach to cool off.\n<<tsuki_flip>>\nMany go just to admire its beauty.\n<<tsuki_noflip>>\nBeaches are one of the most beautiful places on earth.\n<<tsuki_flip>>\nBut I think that humans have damaged the planet too much and the beaches are greatly affected by our pollution.\nSo we must do our part to take care of our fragile ecosystem.\nI hope many of you want to take care of our only home.\n<<tsuki_noflip>>\nOur beautiful land.\nDo you want your home?\n<<pause 4>>\n<<kids_yey>>\n<<tsuki_anim happy>>\nWell said.\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 760,
+			"y": 864
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla4",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nMany of you have surely thought about love.\n<<pause 2>>\nCome on, don't be ashamed to say it.\n<<tsuki_anim happy>>\nHowever, falling in love is a topic for adults.\nMany children come to have that innocent and pure love that can even last for years.\n<<tsuki_anim idle>>\nAlthough, being children they cannot understand all the importance and responsibility of having a relationship.\n<<tsuki_anim happy>>\nWhen they grow up they will understand.\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 757,
+			"y": 1087
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla5",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nGoing to school is sometimes annoying.\nNo?\nBut you must keep in mind that school is a place where we go to learn.\nWe can also meet new friends.\n<<tsuki_flip>>\nBut seeing it as something we should hate is not correct.\nWe must see it as a place that helps us learn.\nOK?\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 754,
+			"y": 1310
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla6",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nThe burgers, pizzas and hot dogs are certainly delicious.\nBut eating them in excess is not good.\nLike sweets, junk food is not good to eat in excess.\n<<tsuki_flip>>\nIt can make us overweight and increase the risk of suffering from heart disease.\n<<tsuki_noflip>>\nWe can't stop eating them, but it shouldn't be the only thing we eat either.\n<<tsuki_anim happy>>\nSo remember, eating healthy is necessary.\n<<tsuki_anim idle>>\nWe can indulge ourselves from time to time.\nBut eating healthy is better.\n<<kids_yey>>\n<<kids_happy>>\nVery good.\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 755,
+			"y": 1529
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla7",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nMany of you love your parents, right?\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nExcellent.\n<<kids_normal>>\nLoving them is something we must do.\nSince they always want our good.\n<<tsuki_flip>>\nSometimes when we are little we think that they just want us not to have fun.\n<<tsuki_noflip>>\nBut that's not true.\nAlthough sometimes a parent exaggerates what their child does.\nParents only want the best for their child.\nSo don't think that they are against you.\nLove them and love them.\n<<tsuki_anim happy>>\nOK?\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nExcellent.\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 755,
+			"y": 1757
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla8",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nThe internet is undoubtedly an impressive source of information.\nBut although it has useful information, unfortunately it is also full of harmful information and content.\nControlling what we see on the internet is a good way to avoid encountering that content.\n<<tsuki_flip>>\nIt is the parents' job to control the content you see.\n<<tsuki_noflip>>\nBut I think seeing all content as harmful is not right.\nThe internet is full of positive information.\nWhat we can use to learn.\n<<tsuki_flip>>\nUse the internet responsibly and in moderation.\n<<tsuki_noflip>>\n<<kids_normal>>\n<<allowActivities>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 755,
+			"y": 1976
+		},
+		"colorID": 3
+	},
+	{
+		"title": "charla9",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nDo you like sports?\nTo me not much.\nI'm not very good at them.\n<<tsuki_anim happy>>\n<<tsuki_flip>>\nMaybe because I'm very lazy.\nHe he.\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nPlaying sports is something that helps us stay healthy.\nMany of us perhaps see them as something that forces us to get up.\nOthers see them as something really fun to do.\n<<tsuki_anim happy>>\nI wish I saw them like this.\nHe he.\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<addPoint 1>>\n<<end>> end",
+		"position": {
+			"x": 756,
+			"y": 2195
+		},
+		"colorID": 3
+	},
+	{
+		"title": "activities2",
+		"tags": "",
+		"body": "What activities do you want to do?\n<<none>>",
+		"position": {
+			"x": 477,
+			"y": 417
+		},
+		"colorID": 2
+	},
+	{
+		"title": "resumeShow",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<tsuki_changeanim>>\n<<tsuki_anim hi>>\nHello again kids!!\n<<tsuki_anim happy>>\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nWelcome again.\n<<kids_normal>>\n<<tsuki_anim idle>>\nLet's continue where we left off.\nOK?\n<<tsuki_anim happy>>\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nI love his encouragement.\n<<kids_normal>>\n<<allowActivities>>\n<<tsuki_anim idle>>\n<<summarize>>\n<<end>> end",
+		"position": {
+			"x": 1241,
+			"y": 410
+		},
+		"colorID": 5
+	},
+	{
+		"title": "showEnd",
+		"tags": "",
+		"body": "<<namebox_name Tsuki>>\n<<NoActivities>>\n<<tsuki_noflip>>\n<<tsuki_anim idle>>\nKids, I have bad news.\nBut we're running out of time and we have to leave the show here.\n<<pause 2>>\n<<tsuki_flip>>\nBut as you know, we'll see you here tomorrow for more fun.\n<<tsuki_noflip>>\nSo as we did in the last broadcast, with a loud shout of joy we must say goodbye.\nNo?\n<<tsuki_anim happy>>\n<<kids_happy>>\n<<kids_yey>>\n<<pause 4>>\nThat's how I like it.\n<<kids_normal>>\n<<tsuki_anim idle>>\nWell...\n<<tsuki_anim hi>>\nSee you soon.\n<<showEnd>>\n<<end>> end",
+		"position": {
+			"x": 1482,
+			"y": 193
+		},
+		"colorID": 1
+	}
+]

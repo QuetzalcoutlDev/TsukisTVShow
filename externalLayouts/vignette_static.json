@@ -1,0 +1,67 @@
+{
+  "associatedLayout": "game",
+  "name": "vignette_static",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 720,
+      "layer": "vignette",
+      "name": "vignette",
+      "persistentUuid": "9d225984-7fd0-4d41-b0c4-2a03f32df5f4",
+      "width": 1280,
+      "x": 0,
+      "y": 0,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 700,
+      "layer": "static",
+      "name": "static",
+      "persistentUuid": "a32710a9-b84e-4b9a-85ea-ab0581e5e80b",
+      "width": 1256,
+      "x": 10,
+      "y": 11,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 703,
+      "layer": "vignette",
+      "name": "vignette2",
+      "persistentUuid": "ad97dc90-b2db-4030-bd16-c097cdf51c1d",
+      "width": 1256,
+      "x": 15,
+      "y": 11,
+      "zOrder": -4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.8,
+    "snap": false,
+    "zoomFactor": 0.29879853636069037,
+    "windowMask": false
+  }
+}
