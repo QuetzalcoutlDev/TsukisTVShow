@@ -85,8 +85,13 @@
     "authorUsernames": [
       "QuetzalcoutlDev"
     ],
-    "categories": [],
-    "playableDevices": [],
+    "categories": [
+      "horror"
+    ],
+    "playableDevices": [
+      "keyboard",
+      "mobile"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
