@@ -1,0 +1,31 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.1] - 2023-09-26
+
+### Added
+
+- UI improvements (mobile)
+- Button to inflate another balloon (mobile)
+- New action key for minigames
+
+### Fixed
+
+- Can't pause the game with the "Pause" button on the keyboard
+- The progress bar in "Blow up balloons" did not fill
+- Could not inflate another balloon
+- Settings sliders were not working
+- Image missing on first startup
+
+### Changed
+
+- Now to inflate another balloon is by pressing the second action key
+
+
+## [0.1.0] - 2023-09-25
+
+The first release

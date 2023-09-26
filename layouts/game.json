@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.4950840073748976,
+    "zoomFactor": 0.4481978045410436,
     "windowMask": false
   },
   "objectsGroups": [
@@ -64,6 +64,9 @@
         },
         {
           "name": "namebox"
+        },
+        {
+          "name": "SkipText"
         }
       ]
     },
@@ -1995,7 +1998,7 @@
       "name": "InflarGlobo",
       "persistentUuid": "4545fe0c-4748-474d-8a2d-ecf0b4777291",
       "width": 159,
-      "x": 93,
+      "x": 88,
       "y": 438,
       "zOrder": 54,
       "numberProperties": [],
@@ -2014,6 +2017,38 @@
       "x": 1034,
       "y": 466,
       "zOrder": 55,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 111,
+      "height": 159,
+      "layer": "ui",
+      "name": "completeGlobo",
+      "persistentUuid": "724a1925-2cfc-464c-ac59-d5f6428b783b",
+      "width": 159,
+      "x": 297,
+      "y": 438,
+      "zOrder": 56,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 38,
+      "layer": "ui",
+      "name": "SkipText",
+      "persistentUuid": "34b99ee5-9778-46e6-bba2-7dee277c5bda",
+      "width": 189,
+      "x": 1029,
+      "y": 552,
+      "zOrder": 57,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7177,6 +7212,134 @@
     },
     {
       "assetStoreId": "",
+      "name": "SkipText",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "folded": true,
+          "name": "option",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0002.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0001.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Saltar texto",
+          "font": "assets/fonts/VarelaRound.ttf",
+          "textAlignment": "center",
+          "characterSize": 21,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0003.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "NextDialog",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "folded": true,
+          "name": "option",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 38,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0002.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 108
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 38,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0001.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 108
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": ">>>>",
+          "font": "assets/fonts/VarelaRound.ttf",
+          "textAlignment": "center",
+          "characterSize": 21,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 38,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0003.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 108
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
       "name": "continuePause",
       "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
@@ -7425,6 +7588,70 @@
           "leftMargin": 0,
           "rightMargin": 0,
           "texture": "assets/gui/botones/boton_ui_circle_inflated_0003.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "completeGlobo",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "folded": true,
+          "name": "option",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_circle_good_ballon_0002.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_circle_good_ballon_0001.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 32
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "",
+          "font": "assets/fonts/vcr.ttf",
+          "textAlignment": "center",
+          "characterSize": 31,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_circle_good_ballon_0003.png",
           "tiled": false,
           "topMargin": 0,
           "width": 32
@@ -9908,7 +10135,7 @@
         "BarBottomPadding": 4,
         "BarLeftPadding": 2,
         "BarRightPadding": 2,
-        "MaxValue": 50,
+        "MaxValue": 42,
         "InitialValue": 0
       },
       "childrenContent": {
@@ -10244,7 +10471,6 @@
       "target": "globals"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -10452,6 +10678,24 @@
               },
               "parameters": [
                 "InflarGlobo",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "completeGlobo",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "SkipText",
                 ""
               ]
             }
@@ -10710,7 +10954,7 @@
               "parameters": [
                 "debug",
                 "=",
-                "\"capintro time = \" + ToString(TimerElapsedTime(\"capintro\")) + \"\ntsuki_pos = [\" + ToString(tsuki.X()) + \", \" + ToString(tsuki.Y()) + \"]\ndialog = \" + ToString(Variable(dialog)) + \"\npauseDialog = \" + ToString(Variable(pauseDialog)) + \"\nautonextDialog time = \" + ToString(TimerElapsedTime(\"autonextDialog\")) + \"\nChangeTsukiAnim = \" + ToString(Variable(ChangeTsukiAnim)) + \"\nTime time = \" + ToString(TimerElapsedTime(\"time\")) + \"\ncurrentSubScreen = \" + VariableString(currentSubScreen)  + \"\ntutorial time = \" + ToString(TimerElapsedTime(\"tutorial\")) + \"\ncomercialpause time = \" + ToString(TimerElapsedTime(\"comercialpause\")) + \"\nTempData = \" + VariableString(TempData) + \"\nObjectToSearchName = \" + VariableString(minigames.searchObjects.objectToSearchName)  + \"\npauseGame = \" + ToString(Variable(pauseGame))"
+                "\"capintro time = \" + ToString(TimerElapsedTime(\"capintro\")) + \"\ntsuki_pos = [\" + ToString(tsuki.X()) + \", \" + ToString(tsuki.Y()) + \"]\ndialog = \" + ToString(Variable(dialog)) + \"\npauseDialog = \" + ToString(Variable(pauseDialog)) + \"\nautonextDialog time = \" + ToString(TimerElapsedTime(\"autonextDialog\")) + \"\nChangeTsukiAnim = \" + ToString(Variable(ChangeTsukiAnim)) + \"\nTime time = \" + ToString(TimerElapsedTime(\"time\")) + \"\ncurrentSubScreen = \" + VariableString(currentSubScreen)  + \"\ntutorial time = \" + ToString(TimerElapsedTime(\"tutorial\")) + \"\ncomercialpause time = \" + ToString(TimerElapsedTime(\"comercialpause\")) + \"\nTempData = \" + VariableString(TempData) + \"\nObjectToSearchName = \" + VariableString(minigames.searchObjects.objectToSearchName)  + \"\npauseGame = \" + ToString(Variable(pauseGame)) + \"\ncap = \" + ToString(GlobalVariable(data.cap))"
               ]
             },
             {
@@ -10992,7 +11236,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Caja de texto",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11143,7 +11386,7 @@
                             "",
                             "\"typewriter\"",
                             ">=",
-                            "0.1"
+                            "0.07"
                           ]
                         }
                       ],
@@ -11225,6 +11468,35 @@
                             "\"ui\""
                           ]
                         }
+                      ],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "SystemInfo::HasTouchScreen"
+                              },
+                              "parameters": [
+                                ""
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "Create"
+                              },
+                              "parameters": [
+                                "",
+                                "NextDialog",
+                                "1064",
+                                "637",
+                                "\"ui\""
+                              ]
+                            }
+                          ]
+                        }
                       ]
                     },
                     {
@@ -11239,6 +11511,15 @@
                         }
                       ],
                       "actions": [
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "NextDialog",
+                            ""
+                          ]
+                        },
                         {
                           "type": {
                             "value": "Delete"
@@ -11313,32 +11594,83 @@
                                 {
                                   "type": {
                                     "inverted": true,
-                                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
-                                  },
-                                  "parameters": []
-                                },
-                                {
-                                  "type": {
-                                    "value": "KeyFromTextPressed"
+                                    "value": "SystemInfo::HasTouchScreen"
                                   },
                                   "parameters": [
-                                    "",
-                                    "GlobalVariableString(game.defaultKeys.skipText)"
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                                      },
+                                      "parameters": []
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "KeyFromTextPressed"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "GlobalVariableString(game.defaultKeys.skipText)"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::CompleteClippedTextScrolling"
+                                      },
+                                      "parameters": []
+                                    }
                                   ]
                                 },
                                 {
-                                  "type": {
-                                    "value": "BuiltinCommonInstructions::Once"
-                                  },
-                                  "parameters": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "DialogueTree::CompleteClippedTextScrolling"
-                                  },
-                                  "parameters": []
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                                      },
+                                      "parameters": []
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "KeyFromTextPressed"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "GlobalVariableString(game.defaultKeys.nextDialog)"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::GoToNextLine"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ]
                                 }
                               ]
                             },
@@ -11347,66 +11679,83 @@
                               "conditions": [
                                 {
                                   "type": {
-                                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
-                                  },
-                                  "parameters": []
-                                },
-                                {
-                                  "type": {
-                                    "value": "KeyFromTextPressed"
+                                    "value": "SystemInfo::HasTouchScreen"
                                   },
                                   "parameters": [
-                                    "",
-                                    "GlobalVariableString(game.defaultKeys.nextDialog)"
+                                    ""
+                                  ]
+                                }
+                              ],
+                              "actions": [],
+                              "events": [
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                                      },
+                                      "parameters": []
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                                      },
+                                      "parameters": [
+                                        "NextDialog",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::GoToNextLine"
+                                      },
+                                      "parameters": []
+                                    }
                                   ]
                                 },
                                 {
-                                  "type": {
-                                    "value": "BuiltinCommonInstructions::Once"
-                                  },
-                                  "parameters": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "DialogueTree::GoToNextLine"
-                                  },
-                                  "parameters": []
-                                }
-                              ]
-                            },
-                            {
-                              "type": "BuiltinCommonInstructions::Standard",
-                              "conditions": [
-                                {
-                                  "type": {
-                                    "value": "DialogueTree::HasClippedTextScrollingCompleted"
-                                  },
-                                  "parameters": []
-                                },
-                                {
-                                  "type": {
-                                    "value": "MouseButtonPressed"
-                                  },
-                                  "parameters": [
-                                    "",
-                                    "Left"
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "inverted": true,
+                                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                                      },
+                                      "parameters": []
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                                      },
+                                      "parameters": [
+                                        "SkipText",
+                                        ""
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::CompleteClippedTextScrolling"
+                                      },
+                                      "parameters": []
+                                    }
                                   ]
-                                },
-                                {
-                                  "type": {
-                                    "value": "BuiltinCommonInstructions::Once"
-                                  },
-                                  "parameters": []
-                                }
-                              ],
-                              "actions": [
-                                {
-                                  "type": {
-                                    "value": "DialogueTree::GoToNextLine"
-                                  },
-                                  "parameters": []
                                 }
                               ]
                             }
@@ -11457,6 +11806,15 @@
                       },
                       "parameters": [
                         "cps",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Delete"
+                      },
+                      "parameters": [
+                        "NextDialog",
                         ""
                       ]
                     }
@@ -11588,6 +11946,61 @@
           ]
         },
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "game.language",
+                "=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "SkipText",
+                "\"Saltar texto\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarGlobal"
+              },
+              "parameters": [
+                "game.language",
+                "=",
+                "1"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "SkipText",
+                "\"Skip text\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12489,7 +12902,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -14053,6 +14465,15 @@
                     "=",
                     "50"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "rules_paper",
+                    ""
+                  ]
                 }
               ],
               "events": [
@@ -14082,58 +14503,6 @@
                     }
                   ]
                 },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "VarGlobal"
-                      },
-                      "parameters": [
-                        "game.language",
-                        "=",
-                        "1"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "DialogueTree::LoadDialogueFromJsonFile"
-                      },
-                      "parameters": [
-                        "",
-                        "assets/dialogs/english/cap2.json"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "DepartScene"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "rules_paper",
-                    ""
-                  ]
-                }
-              ],
-              "events": [
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -14184,6 +14553,32 @@
                       "parameters": [
                         "kid_girl",
                         ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "game.language",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DialogueTree::LoadDialogueFromJsonFile"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/dialogs/english/cap2.json"
                       ]
                     }
                   ]
@@ -14467,7 +14862,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -14495,15 +14889,6 @@
                 }
               ],
               "actions": [
-                {
-                  "type": {
-                    "value": "Delete"
-                  },
-                  "parameters": [
-                    "rules_paper",
-                    ""
-                  ]
-                },
                 {
                   "type": {
                     "value": "SetLayerAmbientLightColor"
@@ -16021,6 +16406,39 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarScene"
+              },
+              "parameters": [
+                "points.Count",
+                "<",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "points.Count",
+                "=",
+                "0"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -16040,13 +16458,11 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Hoja de reglas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -16193,7 +16609,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -16993,7 +17408,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Actividades",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -20043,7 +20457,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -20138,7 +20551,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -20775,12 +21187,6 @@
                         ">=",
                         "6"
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "BuiltinCommonInstructions::Once"
-                      },
-                      "parameters": []
                     }
                   ],
                   "actions": [
@@ -20836,6 +21242,15 @@
               "actions": [
                 {
                   "type": {
+                    "value": "RemoveTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"searchobject\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::AddObjectPositionTween"
                   },
                   "parameters": [
@@ -20847,15 +21262,6 @@
                     "\"linear\"",
                     "1000",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "RemoveTimer"
-                  },
-                  "parameters": [
-                    "",
-                    "\"searchobject\""
                   ]
                 }
               ]
@@ -22089,6 +22495,15 @@
                 "InflarGlobo",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "Montre"
+              },
+              "parameters": [
+                "completeGlobo",
+                ""
+              ]
             }
           ],
           "events": [
@@ -22129,7 +22544,7 @@
                       "parameters": [
                         "MinigamesTXT",
                         "=",
-                        "\"Inflar globo: \" + GlobalVariableString(game.defaultKeys.minigames.action) + \"\nAl completar la barra de progreso \nToca el globo para inflar otro.\""
+                        "\"Inflar globo: \" + GlobalVariableString(game.defaultKeys.minigames.action) + \"\nAl completar la barra de progreso pulsa: \" + GlobalVariableString(game.defaultKeys.minigames.action2)"
                       ]
                     }
                   ]
@@ -22154,7 +22569,7 @@
                       "parameters": [
                         "MinigamesTXT",
                         "=",
-                        "\"Toca el botón de 'Inflar'\npara inflar el globo\nAl completar la barra de progreso\nToca el globo para inflar otro.\""
+                        "\"Toca el botón de 'Inflar'\npara inflar el globo\nAl completar la barra de progreso\nToca el botón del globo para inflar otro.\""
                       ]
                     }
                   ]
@@ -22239,7 +22654,7 @@
                       "parameters": [
                         "MinigamesTXT",
                         "=",
-                        "\"Touch the 'Inflate' button\nto inflate the balloon\nCompleting the progress bar\nTap the balloon to inflate another one.\""
+                        "\"Touch the 'Inflate' button\nto inflate the balloon\nCompleting the progress bar\nTap the balloon button to inflate another one.\""
                       ]
                     }
                   ]
@@ -22864,7 +23279,7 @@
                                 "globo",
                                 "progress",
                                 "+",
-                                "3"
+                                "2"
                               ]
                             },
                             {
@@ -22874,7 +23289,7 @@
                               "parameters": [
                                 "GloboProgress",
                                 "+",
-                                "3",
+                                "2",
                                 ""
                               ]
                             },
@@ -22941,7 +23356,7 @@
                                 "globo",
                                 "progress",
                                 "+",
-                                "3"
+                                "2"
                               ]
                             },
                             {
@@ -22951,7 +23366,7 @@
                               "parameters": [
                                 "GloboProgress",
                                 "+",
-                                "3",
+                                "2",
                                 ""
                               ]
                             },
@@ -23247,28 +23662,34 @@
                     "<",
                     "50"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
                 }
               ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
-                  },
-                  "parameters": [
-                    "globo",
-                    "Animation",
-                    "=",
-                    "5"
-                  ]
-                }
-              ],
+              "actions": [],
               "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetIndex"
+                      },
+                      "parameters": [
+                        "globo",
+                        "Animation",
+                        "=",
+                        "5"
+                      ]
+                    }
+                  ]
+                },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
@@ -23289,23 +23710,126 @@
                       "conditions": [
                         {
                           "type": {
-                            "value": "SourisSurObjet"
+                            "value": "KeyFromTextPressed"
                           },
                           "parameters": [
-                            "globo",
                             "",
+                            "GlobalVariableString(game.defaultKeys.minigames.action2)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
                             "",
+                            "assets/sounds/pop2.ogg",
+                            "2",
+                            "",
+                            "100",
                             ""
                           ]
                         },
                         {
                           "type": {
-                            "value": "MouseButtonPressed"
+                            "value": "Create"
                           },
                           "parameters": [
                             "",
-                            "Left"
+                            "GloboTouchParticles",
+                            "globo.CenterX()",
+                            "globo.CenterY()",
+                            "\"tsuki\""
                           ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "minigames.inflarGlobos.goods",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "globo",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "globo",
+                            "tsuki.PointX(\"globo\")",
+                            "tsuki.PointY(\"globo\")",
+                            "\"tsuki\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "globo",
+                            "progress",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                          },
+                          "parameters": [
+                            "GloboProgress",
+                            "=",
+                            "0",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SystemInfo::HasTouchScreen"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                          },
+                          "parameters": [
+                            "completeGlobo",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
                         }
                       ],
                       "actions": [
@@ -23579,6 +24103,14 @@
               },
               "parameters": [
                 "InflarGlobo"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "completeGlobo"
               ]
             }
           ]
@@ -25710,7 +26242,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Pausa",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -26252,37 +26783,6 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "GlobalVariableString(game.defaultKeys.pause)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "pauseGame",
-                    "False"
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
                     "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
@@ -26321,7 +26821,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -26341,6 +26840,7 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
+              "folded": true,
               "name": "Grouped events",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -26863,36 +27363,35 @@
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "GlobalVariableString(game.defaultKeys.pause)"
+              ]
             },
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "KeyFromTextPressed"
-                  },
-                  "parameters": [
-                    "",
-                    "GlobalVariableString(game.defaultKeys.pause)"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "SetSceneVariableAsBoolean"
-                  },
-                  "parameters": [
-                    "pauseGame",
-                    "True"
-                  ]
-                }
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ToggleSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "pauseGame"
               ]
             }
           ]

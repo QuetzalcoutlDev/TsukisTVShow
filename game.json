@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.1.0",
+    "version": "0.1.1",
     "name": "Tsuki's TV Show",
     "description": "Tsuki’s TV Show is a game of psychological horror and mascot horror, created for the Monarca Game Jam 2023",
     "author": "Dazzle Team",
@@ -3063,6 +3063,42 @@
         "name": "assets/gui/botones/go_back.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_good_ballon_0001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_good_ballon_0001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_good_ballon_0002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_good_ballon_0002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/botones/boton_ui_circle_good_ballon_0003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/botones/boton_ui_circle_good_ballon_0003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/gui/RGB.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets/gui/RGB.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4971,7 +5007,6 @@
           "value": 8
         },
         {
-          "folded": true,
           "name": "defaultKeys",
           "type": "structure",
           "children": [
@@ -4983,6 +5018,11 @@
                   "name": "action",
                   "type": "string",
                   "value": "Space"
+                },
+                {
+                  "name": "action2",
+                  "type": "string",
+                  "value": "Return"
                 },
                 {
                   "name": "move",

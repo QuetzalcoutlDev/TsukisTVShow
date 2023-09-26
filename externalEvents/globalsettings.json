@@ -170,36 +170,7 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Or"
-          },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "VarGlobalTxt"
-              },
-              "parameters": [
-                "currentScene",
-                "=",
-                "\"menu\""
-              ]
-            },
-            {
-              "type": {
-                "value": "VarGlobalTxt"
-              },
-              "parameters": [
-                "currentScene",
-                "=",
-                "\"init\""
-              ]
-            }
-          ]
-        }
-      ],
+      "conditions": [],
       "actions": [
         {
           "type": {

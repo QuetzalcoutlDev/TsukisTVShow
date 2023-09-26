@@ -231,6 +231,9 @@
         },
         {
           "name": "KeysTitle"
+        },
+        {
+          "name": "Action2Key"
         }
       ]
     },
@@ -303,6 +306,18 @@
       "name": "ChangeVolume",
       "type": "boolean",
       "value": true
+    },
+    {
+      "folded": true,
+      "name": "versionError",
+      "type": "string",
+      "value": ""
+    },
+    {
+      "folded": true,
+      "name": "gitVersion",
+      "type": "string",
+      "value": "0.1.1"
     }
   ],
   "instances": [
@@ -1958,6 +1973,63 @@
           "smoothed": true,
           "underlined": false,
           "string": "Space",
+          "font": "assets/fonts/VarelaRound.ttf",
+          "textAlignment": "center",
+          "characterSize": 22,
+          "color": {
+            "b": 250,
+            "g": 250,
+            "r": 250
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0003.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 128
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "Action2Key",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0002.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 128
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 32,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0001.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 128
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Return",
           "font": "assets/fonts/VarelaRound.ttf",
           "textAlignment": "center",
           "characterSize": 22,
@@ -4218,6 +4290,25 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "\"https://raw.githubusercontent.com/QuetzalcoutlDev/TsukisTVShow/master/gitVersion.txt\"",
+                "\"\"",
+                "\"GET\"",
+                "",
+                "gitVersion",
+                "versionError"
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4400,7 +4491,16 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
       "actions": [
         {
           "type": {
@@ -5797,7 +5897,6 @@
       ],
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6242,6 +6341,47 @@
                     "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
+                    "Action2Key",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "KeyToChange",
+                    "=",
+                    "\"Action2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "waitInput",
+                    "True"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
                     "configkeysback",
                     ""
                   ]
@@ -6269,7 +6409,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -6881,6 +7020,66 @@
                   },
                   "parameters": [
                     "game.defaultKeys.minigames.action",
+                    "=",
+                    "VariableString(KeyInput)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetSceneVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "waitInput",
+                    "False"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "KeyToChange",
+                    "=",
+                    "\"Action2\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnyKeyPressed"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "KeyInput",
+                    "=",
+                    "LastPressedKey()"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "game.defaultKeys.minigames.action2",
                     "=",
                     "VariableString(KeyInput)"
                   ]
@@ -7711,6 +7910,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Configuración de Checks",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8657,6 +8857,16 @@
               "parameters": [
                 "ActionKey",
                 "GlobalVariableString(game.defaultKeys.minigames.action)",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "Action2Key",
+                "GlobalVariableString(game.defaultKeys.minigames.action2)",
                 ""
               ]
             }

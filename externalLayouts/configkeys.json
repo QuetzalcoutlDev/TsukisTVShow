@@ -224,6 +224,22 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 32,
+      "layer": "config-keys",
+      "name": "Action2Key",
+      "persistentUuid": "9059d3ab-911d-4c16-ac54-d59cb206035a",
+      "width": 152,
+      "x": 641,
+      "y": 531,
+      "zOrder": 15,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "editionSettings": {
@@ -236,7 +252,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.33005600491659254,
+    "zoomFactor": 0.7077142870146651,
     "windowMask": false
   }
 }
