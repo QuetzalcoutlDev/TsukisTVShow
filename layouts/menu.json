@@ -4290,25 +4290,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SendAsyncRequest"
-              },
-              "parameters": [
-                "\"https://raw.githubusercontent.com/QuetzalcoutlDev/TsukisTVShow/master/gitVersion.txt\"",
-                "\"\"",
-                "\"GET\"",
-                "",
-                "gitVersion",
-                "versionError"
-              ]
-            }
-          ]
         }
       ]
     },

@@ -1016,7 +1016,7 @@
       "customSize": true,
       "depth": 1,
       "height": 203,
-      "layer": "ui",
+      "layer": "debug",
       "name": "debug",
       "persistentUuid": "a201c1e1-aa2e-4e3d-bb93-763b3c330f35",
       "width": 425,
@@ -2049,6 +2049,22 @@
       "x": 1029,
       "y": 552,
       "zOrder": 57,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 32,
+      "height": 38,
+      "layer": "ui",
+      "name": "SkipTime",
+      "persistentUuid": "139ff22b-6950-4b3a-8b82-aabfe5a4ab07",
+      "width": 229,
+      "x": 52,
+      "y": 572,
+      "zOrder": 58,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -7340,6 +7356,70 @@
     },
     {
       "assetStoreId": "",
+      "name": "SkipTime",
+      "tags": "",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [
+        {
+          "folded": true,
+          "name": "option",
+          "type": "number",
+          "value": 0
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "content": {},
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 0,
+          "height": 38,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0002.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 229
+        },
+        "Idle": {
+          "bottomMargin": 0,
+          "height": 38,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0001.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 229
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "Adelantar la cinta",
+          "font": "assets/fonts/VarelaRound.ttf",
+          "textAlignment": "center",
+          "characterSize": 21,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 0,
+          "height": 38,
+          "leftMargin": 0,
+          "rightMargin": 0,
+          "texture": "assets/gui/botones/boton_ui_general_0003.png",
+          "tiled": false,
+          "topMargin": 0,
+          "width": 229
+        }
+      }
+    },
+    {
+      "assetStoreId": "",
       "name": "continuePause",
       "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
@@ -10471,6 +10551,7 @@
       "target": "globals"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -10929,7 +11010,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -10954,7 +11034,7 @@
               "parameters": [
                 "debug",
                 "=",
-                "\"capintro time = \" + ToString(TimerElapsedTime(\"capintro\")) + \"\ntsuki_pos = [\" + ToString(tsuki.X()) + \", \" + ToString(tsuki.Y()) + \"]\ndialog = \" + ToString(Variable(dialog)) + \"\npauseDialog = \" + ToString(Variable(pauseDialog)) + \"\nautonextDialog time = \" + ToString(TimerElapsedTime(\"autonextDialog\")) + \"\nChangeTsukiAnim = \" + ToString(Variable(ChangeTsukiAnim)) + \"\nTime time = \" + ToString(TimerElapsedTime(\"time\")) + \"\ncurrentSubScreen = \" + VariableString(currentSubScreen)  + \"\ntutorial time = \" + ToString(TimerElapsedTime(\"tutorial\")) + \"\ncomercialpause time = \" + ToString(TimerElapsedTime(\"comercialpause\")) + \"\nTempData = \" + VariableString(TempData) + \"\nObjectToSearchName = \" + VariableString(minigames.searchObjects.objectToSearchName)  + \"\npauseGame = \" + ToString(Variable(pauseGame)) + \"\ncap = \" + ToString(GlobalVariable(data.cap))"
+                "\"capintro time = \" + ToString(TimerElapsedTime(\"capintro\")) + \"\ntsuki_pos = [\" + ToString(tsuki.X()) + \", \" + ToString(tsuki.Y()) + \"]\ndialog = \" + ToString(Variable(dialog)) + \"\npauseDialog = \" + ToString(Variable(pauseDialog)) + \"\nautonextDialog time = \" + ToString(TimerElapsedTime(\"autonextDialog\")) + \"\nChangeTsukiAnim = \" + ToString(Variable(ChangeTsukiAnim)) + \"\nTime time = \" + ToString(TimerElapsedTime(\"time\")) + \"\ncurrentSubScreen = \" + VariableString(currentSubScreen)  + \"\ntutorial time = \" + ToString(TimerElapsedTime(\"tutorial\")) + \"\ncomercialpause time = \" + ToString(TimerElapsedTime(\"comercialpause\")) + \"\nTempData = \" + VariableString(TempData) + \"\nObjectToSearchName = \" + VariableString(minigames.searchObjects.objectToSearchName)  + \"\npauseGame = \" + ToString(Variable(pauseGame)) + \"\ncap = \" + ToString(GlobalVariable(data.cap)) + \" \nshowend = \" + ToString(TimerElapsedTime(\"showend\"))"
               ]
             },
             {
@@ -11241,7 +11321,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11649,6 +11728,40 @@
                                     },
                                     {
                                       "type": {
+                                        "value": "MouseButtonPressed"
+                                      },
+                                      "parameters": [
+                                        "",
+                                        "Left"
+                                      ]
+                                    },
+                                    {
+                                      "type": {
+                                        "value": "BuiltinCommonInstructions::Once"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ],
+                                  "actions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::CompleteClippedTextScrolling"
+                                      },
+                                      "parameters": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "BuiltinCommonInstructions::Standard",
+                                  "conditions": [
+                                    {
+                                      "type": {
+                                        "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                                      },
+                                      "parameters": []
+                                    },
+                                    {
+                                      "type": {
                                         "value": "KeyFromTextPressed"
                                       },
                                       "parameters": [
@@ -12000,7 +12113,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13108,6 +13220,15 @@
               },
               "parameters": [
                 "cps",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "NextDialog",
                 ""
               ]
             }
@@ -14335,6 +14456,7 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -15447,7 +15569,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Tiempo",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -15778,6 +15899,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -15821,14 +15943,7 @@
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "BuiltinCommonInstructions::Once"
-                  },
-                  "parameters": []
-                }
-              ],
+              "conditions": [],
               "actions": [
                 {
                   "type": {
@@ -15850,16 +15965,6 @@
                 },
                 {
                   "type": {
-                    "value": "ModVarSceneTxt"
-                  },
-                  "parameters": [
-                    "currentSubScreen",
-                    "=",
-                    "\"normal\""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetObjectVariableAsBoolean"
                   },
                   "parameters": [
@@ -15870,10 +15975,35 @@
                 },
                 {
                   "type": {
-                    "value": "DialogueTree::StartDialogueFromBranch"
+                    "value": "ModVarSceneTxt"
                   },
                   "parameters": [
-                    "\"comercialpause\""
+                    "currentSubScreen",
+                    "=",
+                    "\"normal\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "DialogueTree::StartDialogueFromBranch"
+                      },
+                      "parameters": [
+                        "\"comercialpause\""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -15921,7 +16051,7 @@
               },
               "parameters": [
                 "time.minutes",
-                ">=",
+                ">",
                 "59"
               ]
             }
@@ -16005,21 +16135,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "Tween::AddObjectPositionTween"
-                  },
-                  "parameters": [
-                    "CameraObject",
-                    "Tween",
-                    "\"pos\"",
-                    "tsuki.CenterX()",
-                    "tsuki.CenterY()",
-                    "\"linear\"",
-                    "1000",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "Tween::AddObjectOpacityTween"
                   },
                   "parameters": [
@@ -16079,12 +16194,42 @@
                   ]
                 }
               ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::AddObjectPositionTween"
+                  },
+                  "parameters": [
+                    "CameraObject",
+                    "Tween",
+                    "\"pos\"",
+                    "tsuki.CenterX()",
+                    "tsuki.CenterY()",
+                    "\"linear\"",
+                    "1000",
+                    ""
+                  ]
+                }
+              ]
             }
           ]
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
+            {
+              "type": {
+                "value": "SceneVariableAsBoolean"
+              },
+              "parameters": [
+                "time.showIsEnd",
+                "True"
+              ]
+            },
             {
               "type": {
                 "value": "VarGlobal"
@@ -16157,9 +16302,15 @@
                   "parameters": [
                     "",
                     "\"showend\"",
-                    ">=",
-                    "4.5"
+                    ">",
+                    "4"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -16257,6 +16408,12 @@
                     ">=",
                     "2"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -16282,7 +16439,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Puntos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -16311,6 +16467,16 @@
                 "=",
                 "\"Puntos: \" + ToString(Variable(points.Count)) + \"/\"  + ToString(Variable(points.limit))"
               ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "SkipTime",
+                "\"Adelantar la cinta\"",
+                ""
+              ]
             }
           ]
         },
@@ -16337,6 +16503,16 @@
                 "pointsTXT",
                 "=",
                 "\"Points: \" + ToString(Variable(points.Count)) + \"/\"  + ToString(Variable(points.limit))"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteButton::PanelSpriteButton::SetLabelText"
+              },
+              "parameters": [
+                "SkipTime",
+                "\"Advance the tape\"",
+                ""
               ]
             }
           ]
@@ -16436,6 +16612,196 @@
                 "points.Count",
                 "=",
                 "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "VarSceneTxt"
+              },
+              "parameters": [
+                "currentSubScreen",
+                "=",
+                "\"normal\""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "points.Count",
+                    ">",
+                    "Variable(points.limit)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.hour",
+                    "=",
+                    "4"
+                  ]
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "SkipTime",
+                        "52",
+                        "572",
+                        "\"ui\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                      },
+                      "parameters": [
+                        "SkipTime",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "time.hour",
+                        "=",
+                        "5"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "points.Count",
+                    "<",
+                    "Variable(points.limit)"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.hour",
+                    "=",
+                    "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "SkipTime",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.hour",
+                    "=",
+                    "5"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"normal\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "SkipTime",
+                ""
               ]
             }
           ]
@@ -17238,6 +17604,37 @@
                       "conditions": [
                         {
                           "type": {
+                            "value": "TimerPaused"
+                          },
+                          "parameters": [
+                            "",
+                            "\"tutorial\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "UnPauseTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"tutorial\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
                             "value": "CompareTimer"
                           },
                           "parameters": [
@@ -17455,7 +17852,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -17487,6 +17883,37 @@
                   ],
                   "actions": [],
                   "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TimerPaused"
+                          },
+                          "parameters": [
+                            "",
+                            "\"tutorial\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "UnPauseTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"tutorial\""
+                          ]
+                        }
+                      ]
+                    },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
@@ -24272,11 +24699,6 @@
               ]
             }
           ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
         }
       ],
       "parameters": []
@@ -24381,6 +24803,15 @@
               },
               "parameters": [
                 "kidsVisible",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetSceneVariableAsBoolean"
+              },
+              "parameters": [
+                "dialog",
                 "False"
               ]
             }
@@ -24529,6 +24960,31 @@
                         "\"linear\"",
                         "5000",
                         ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "TimerPaused"
+                      },
+                      "parameters": [
+                        "",
+                        "\"comercialpause\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "UnPauseTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"comercialpause\""
                       ]
                     }
                   ]
@@ -24696,7 +25152,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -24742,6 +25197,37 @@
                         {
                           "type": {
                             "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"tutorial\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "TimerPaused"
+                          },
+                          "parameters": [
+                            "",
+                            "\"tutorial\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "UnPauseTimer"
                           },
                           "parameters": [
                             "",
@@ -24915,6 +25401,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -25782,6 +26269,31 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "TimerPaused"
+                      },
+                      "parameters": [
+                        "",
+                        "\"resumeshow\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "UnPauseTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"resumeshow\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "VarSceneTxt"
                       },
                       "parameters": [
@@ -26247,7 +26759,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -26840,7 +27351,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Grouped events",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -26999,7 +27509,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -27086,6 +27595,39 @@
                   "conditions": [
                     {
                       "type": {
+                        "value": "Visible"
+                      },
+                      "parameters": [
+                        "tutorialTXT"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TimerPaused"
+                      },
+                      "parameters": [
+                        "",
+                        "\"tutorial\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "UnPauseTimer"
+                      },
+                      "parameters": [
+                        "",
+                        "\"tutorial\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
                         "value": "SceneVariableAsBoolean"
                       },
                       "parameters": [
@@ -27127,30 +27669,6 @@
                       "parameters": [
                         "",
                         "\"resumeshow\""
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "Visible"
-                      },
-                      "parameters": [
-                        "tutorialTXT"
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "UnPauseTimer"
-                      },
-                      "parameters": [
-                        "",
-                        "\"tutorial\""
                       ]
                     }
                   ]
@@ -27873,6 +28391,22 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "vignette",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": []
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "debug",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
