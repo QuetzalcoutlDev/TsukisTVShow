@@ -14,11 +14,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Reduction of the effect of chromatic aberration
+- The "Exit" button in the main menu should not be in the Web version
+- Now clicking also advances the dialogs (PC and Web)
 
 ### Fixed
 
 - The next dialog button did not disappear (Mobile)
 - Commercial break not working/running
+- The "Continue" button did not work
+- "Delete data" did not work
 
 ## [0.1.1] - 2023-09-26
 

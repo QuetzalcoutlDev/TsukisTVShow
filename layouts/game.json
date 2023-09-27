@@ -11745,7 +11745,7 @@
                                   "actions": [
                                     {
                                       "type": {
-                                        "value": "DialogueTree::CompleteClippedTextScrolling"
+                                        "value": "DialogueTree::GoToNextLine"
                                       },
                                       "parameters": []
                                     }
@@ -14710,7 +14710,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -14793,15 +14792,6 @@
                     "tsuki",
                     "=",
                     "348"
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
-                  },
-                  "parameters": [
-                    "tsuki",
-                    "Animation"
                   ]
                 },
                 {
@@ -14936,6 +14926,42 @@
                     "\"linear\"",
                     "1000",
                     ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.minutes",
+                    "<",
+                    "55"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::PauseAnimation"
+                  },
+                  "parameters": [
+                    "tsuki",
+                    "Animation"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "tsuki",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -16316,12 +16342,22 @@
               "actions": [
                 {
                   "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"TsukiTVShow\"",
+                    "\"data\"",
+                    "GlobalVarToJSON(data)"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Scene"
                   },
                   "parameters": [
                     "",
                     "\"vhs\"",
-                    ""
+                    "no"
                   ]
                 }
               ]
@@ -16368,11 +16404,31 @@
               "actions": [
                 {
                   "type": {
+                    "value": "ModVarGlobalTxt"
+                  },
+                  "parameters": [
+                    "data.VHSName",
+                    "=",
+                    "\"Listen\""
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetGlobalVariableAsBoolean"
                   },
                   "parameters": [
                     "TakeVHS",
                     "True"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"TsukiTVShow\"",
+                    "\"data\"",
+                    "GlobalVarToJSON(data)"
                   ]
                 },
                 {
@@ -16424,7 +16480,7 @@
                   "parameters": [
                     "",
                     "\"vhs\"",
-                    ""
+                    "no"
                   ]
                 }
               ]
@@ -16439,6 +16495,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Puntos",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -16654,6 +16711,16 @@
                     "=",
                     "4"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.minutes",
+                    ">",
+                    "35"
+                  ]
                 }
               ],
               "actions": [],
@@ -16712,6 +16779,16 @@
                         "=",
                         "5"
                       ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarScene"
+                      },
+                      "parameters": [
+                        "time.minutes",
+                        "=",
+                        "0"
+                      ]
                     }
                   ]
                 }
@@ -16738,6 +16815,16 @@
                     "time.hour",
                     "=",
                     "4"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.minutes",
+                    ">",
+                    "35"
                   ]
                 },
                 {
@@ -16790,6 +16877,16 @@
                     "=",
                     "\"normal\""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "VarScene"
+                  },
+                  "parameters": [
+                    "time.minutes",
+                    "<",
+                    "35"
+                  ]
                 }
               ]
             }
@@ -16824,6 +16921,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Hoja de reglas",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -17484,24 +17582,6 @@
                             "TakeVHS",
                             "True"
                           ]
-                        },
-                        {
-                          "type": {
-                            "value": "GlobalVariablePushNumber"
-                          },
-                          "parameters": [
-                            "data.VHSNumberTake",
-                            "vhs.Variable(number)"
-                          ]
-                        },
-                        {
-                          "type": {
-                            "value": "Delete"
-                          },
-                          "parameters": [
-                            "vhs",
-                            ""
-                          ]
                         }
                       ],
                       "events": [
@@ -17510,29 +17590,92 @@
                           "conditions": [
                             {
                               "type": {
-                                "value": "VarGlobal"
-                              },
-                              "parameters": [
-                                "data.cap",
-                                "=",
-                                "1"
-                              ]
-                            },
-                            {
-                              "type": {
                                 "value": "BuiltinCommonInstructions::Once"
                               },
                               "parameters": []
                             }
                           ],
-                          "actions": [
+                          "actions": [],
+                          "events": [
                             {
-                              "type": {
-                                "value": "ResetTimer"
-                              },
-                              "parameters": [
-                                "",
-                                "\"tutorial\""
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "data.cap",
+                                    "=",
+                                    "1"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobalTxt"
+                                  },
+                                  "parameters": [
+                                    "data.VHSName",
+                                    "=",
+                                    "\"Jennifer\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "ResetTimer"
+                                  },
+                                  "parameters": [
+                                    "",
+                                    "\"tutorial\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "vhs",
+                                    ""
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "BuiltinCommonInstructions::Standard",
+                              "conditions": [
+                                {
+                                  "type": {
+                                    "value": "VarGlobal"
+                                  },
+                                  "parameters": [
+                                    "data.cap",
+                                    "=",
+                                    "2"
+                                  ]
+                                }
+                              ],
+                              "actions": [
+                                {
+                                  "type": {
+                                    "value": "ModVarGlobalTxt"
+                                  },
+                                  "parameters": [
+                                    "data.VHSName",
+                                    "=",
+                                    "\"Drawings\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "Delete"
+                                  },
+                                  "parameters": [
+                                    "vhs",
+                                    ""
+                                  ]
+                                }
                               ]
                             }
                           ]
@@ -17805,6 +17948,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Actividades",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -24087,7 +24231,7 @@
                     "globo",
                     "progress",
                     "<",
-                    "50"
+                    "44"
                   ]
                 }
               ],
@@ -24355,7 +24499,7 @@
                     "globo",
                     "progress",
                     ">=",
-                    "50"
+                    "44"
                   ]
                 }
               ],
@@ -24538,6 +24682,17 @@
               },
               "parameters": [
                 "completeGlobo"
+              ]
+            },
+            {
+              "type": {
+                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+              },
+              "parameters": [
+                "GloboProgress",
+                "=",
+                "0",
+                ""
               ]
             }
           ]
@@ -24863,13 +25018,11 @@
                 },
                 {
                   "type": {
-                    "value": "FadeMusicVolume"
+                    "value": "StopMusicCanal"
                   },
                   "parameters": [
                     "",
-                    "0",
-                    "0",
-                    "2"
+                    "0"
                   ]
                 },
                 {
@@ -26754,6 +26907,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Pausa",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -28088,10 +28242,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -28119,10 +28273,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -28150,10 +28304,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -28181,10 +28335,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -28228,10 +28382,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -28259,10 +28413,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -28290,10 +28444,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -28321,10 +28475,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},

@@ -4290,6 +4290,53 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "SystemInfo::IsNativeDesktopApp"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SystemInfo::IsMobile"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "SystemInfo::IsPreview"
+                  },
+                  "parameters": [
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "exit",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5312,7 +5359,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -5368,7 +5414,18 @@
                   "parameters": []
                 }
               ],
-              "actions": []
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"togame\""
+                  ]
+                }
+              ]
             }
           ]
         },
@@ -5843,7 +5900,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -7264,7 +7320,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -7318,7 +7373,7 @@
               "parameters": [
                 "YesNoTitle",
                 "=",
-                "\"¿Deseas borrar tus datos de juego?\n\nTen en cuenta que esto borrara tus configuraciones y progreso\""
+                "\"¿Deseas borrar tus datos de juego?\n\nTen en cuenta que esto borrara tus configuraciones y progreso\nEl juego se cerrara.\"\n"
               ]
             }
           ]
@@ -7351,7 +7406,7 @@
               "parameters": [
                 "YesNoTitle",
                 "=",
-                "\"¿Deseas borrar tus datos de juego?\n\nTen en cuenta que esto borrara tus configuraciones y progreso\""
+                "\"Do you want to delete your game data?\n\nPlease note that this will erase your settings and progress\nThe game will be closed.\""
               ]
             }
           ]
@@ -7381,26 +7436,23 @@
                 "value": "DeleteFichier"
               },
               "parameters": [
-                "\"gameSettings\""
+                "\"TsukiTVShow\""
               ]
             },
             {
               "type": {
-                "value": "DeleteFichier"
+                "value": "Quit"
               },
               "parameters": [
-                "\"gameData\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Scene"
-              },
-              "parameters": [
-                "",
-                "\"init\"",
                 ""
               ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
             }
           ]
         },
@@ -8889,10 +8941,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -8936,10 +8988,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -8967,10 +9019,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -8998,10 +9050,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -9029,10 +9081,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -9060,10 +9112,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},

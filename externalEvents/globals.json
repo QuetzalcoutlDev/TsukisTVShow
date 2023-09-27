@@ -117,25 +117,6 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusicCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/vhs-render-sound.ogg",
-                "1",
-                "yes",
-                "30",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
@@ -166,6 +147,25 @@
               "parameters": [
                 "VariableString(TempData)",
                 "data"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/vhs-render-sound.ogg",
+                "1",
+                "",
+                "30",
+                ""
               ]
             }
           ]

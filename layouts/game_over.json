@@ -380,10 +380,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},

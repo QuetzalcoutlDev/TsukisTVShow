@@ -1841,10 +1841,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -1866,23 +1866,7 @@
       "renderingType": "",
       "visibility": false,
       "cameras": [],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
+      "effects": []
     },
     {
       "ambientLightColorB": 200,

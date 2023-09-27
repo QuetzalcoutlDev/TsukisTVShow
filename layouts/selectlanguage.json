@@ -1829,10 +1829,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -6,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -1860,10 +1860,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -1891,10 +1891,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},

@@ -104,6 +104,43 @@
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "GroupExists"
+              },
+              "parameters": [
+                "\"TsukiTVShow\"",
+                "\"firstStart\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "LireFichierExp"
+              },
+              "parameters": [
+                "\"TsukiTVShow\"",
+                "\"firstStart\"",
+                "",
+                "TempStart"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarGlobal"
+              },
+              "parameters": [
+                "firstStart",
+                "=",
+                "Variable(TempStart)"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -159,44 +196,16 @@
                 "",
                 "assets/sounds/TextShow.wav"
               ]
+            },
+            {
+              "type": {
+                "value": "PreloadSound"
+              },
+              "parameters": [
+                "",
+                "assets/sounds/VHSCasetteIn.wav"
+              ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "GroupExists"
-          },
-          "parameters": [
-            "\"TsukiTVShow\"",
-            "\"firstStart\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "LireFichierExp"
-          },
-          "parameters": [
-            "\"TsukiTVShow\"",
-            "\"firstStart\"",
-            "",
-            "TempStart"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarGlobal"
-          },
-          "parameters": [
-            "firstStart",
-            "=",
-            "Variable(TempStart)"
           ]
         }
       ]

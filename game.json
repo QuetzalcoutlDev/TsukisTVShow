@@ -19,9 +19,9 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.1.1",
+    "version": "0.1.2",
     "name": "Tsuki's TV Show",
-    "description": "Tsuki’s TV Show is a game of psychological horror and mascot horror, created for the Monarca Game Jam 2023",
+    "description": "Tsuki’s TV Show is a game of psychological horror and mascot horror, created for the Monarca Game Jam 2023\n\nControls:\n\n-Mouse\n-Keyboard\n\nSee key configuration menu for mapping",
     "author": "Dazzle Team",
     "windowWidth": 1280,
     "windowHeight": 720,
@@ -593,15 +593,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0007.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/tsuki/happyidle/tsuki_happyidle_0007.png",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/sprites/tsuki/good/tsuki_good_0001.png",
         "kind": "image",
         "metadata": "",
@@ -653,15 +644,6 @@
         "name": "assets/sprites/tsuki/good/tsuki_good_0006.png",
         "smoothed": false,
         "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/sprites/tsuki/good/tsuki_good_0007.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/sprites/tsuki/good/tsuki_good_0007.png",
-        "smoothed": false,
-        "userAdded": true
       },
       {
         "alwaysLoaded": false,
@@ -1482,45 +1464,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/Square White Slider Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/324e5f522f6242e9f93090e75ddc38427c3a6c42e8236dbf0ed541bd85cf7221_Square White Slider Border.png",
-          "name": "Square White Slider Border.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/47bc684198cd25b3ec74b0e72c2e2c7abb1b6736bd9f4b78a943c663e83118bf_Square White Slider Fill Bar.png",
-          "name": "Square White Slider Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Square White Slider Thumb.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Square White Slider Thumb.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Settings UI/Slider/pixel art/848f861767e7ce4581dba9e122ee7bafeaca57987655cebe1f78ab31d1300f0f_Square White Slider Thumb.png",
-          "name": "Square White Slider Thumb.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/gui/botones/boton_ui_circle_delete_0004.png",
         "kind": "image",
         "metadata": "",
@@ -1652,14 +1595,6 @@
         "metadata": "",
         "name": "assets/gui/cps.png",
         "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "disablePreload": false,
-        "file": "assets/cap1.json",
-        "kind": "json",
-        "metadata": "{\"extension\":\".json\"}",
-        "name": "cap1",
         "userAdded": true
       },
       {
@@ -2137,15 +2072,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "assets/gui/RGB",
-        "kind": "image",
-        "metadata": "",
-        "name": "assets/gui/RGB",
-        "smoothed": false,
-        "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
         "file": "assets/gui/vignetteTVEffect.png",
         "kind": "image",
         "metadata": "",
@@ -2372,7 +2298,7 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/1.jpg",
         "kind": "image",
         "metadata": "",
@@ -2381,7 +2307,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/2.jpg",
         "kind": "image",
         "metadata": "",
@@ -2390,7 +2316,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/3.jpg",
         "kind": "image",
         "metadata": "",
@@ -2399,7 +2325,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/4.jpg",
         "kind": "image",
         "metadata": "",
@@ -2408,7 +2334,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/5.jpg",
         "kind": "image",
         "metadata": "",
@@ -2417,7 +2343,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/7.jpg",
         "kind": "image",
         "metadata": "",
@@ -2426,7 +2352,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/8.jpg",
         "kind": "image",
         "metadata": "",
@@ -2435,7 +2361,7 @@
         "userAdded": false
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/9.jpg",
         "kind": "image",
         "metadata": "",
@@ -2454,39 +2380,13 @@
         "userAdded": true
       },
       {
-        "alwaysLoaded": false,
+        "alwaysLoaded": true,
         "file": "assets/drawings/6.jpg",
         "kind": "image",
         "metadata": "",
         "name": "assets/drawings/6.jpg",
         "smoothed": false,
         "userAdded": true
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Flat Bar Green Fill Bar.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat Bar Green Fill Bar.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/4037e5e9b8a1ede7cb20a326256ce5d9e9a5d94715303743595e97375ceaabaf_Flat Bar Green Fill Bar.png",
-          "name": "Flat Bar Green Fill Bar.png"
-        }
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "assets/Flat Bar White Border.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "Flat Bar White Border.png",
-        "smoothed": false,
-        "userAdded": false,
-        "origin": {
-          "identifier": "https://asset-resources.gdevelop.io/public-resources/Resource bars/pixel art/c090d31cafed0c8ef7bb4d5af75a7dbf7149bcc03a7d5d63ae997d59100e362e_Flat Bar White Border.png",
-          "name": "Flat Bar White Border.png"
-        }
       },
       {
         "alwaysLoaded": false,
@@ -2796,15 +2696,6 @@
       },
       {
         "alwaysLoaded": false,
-        "file": "desktop-icon-512.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "desktop-icon-512.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
         "file": "android-icon-192.png",
         "kind": "image",
         "metadata": "",
@@ -2854,15 +2745,6 @@
         "kind": "image",
         "metadata": "",
         "name": "android-icon-36.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "alwaysLoaded": false,
-        "file": "android-windowSplashScreenAnimatedIcon.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "android-windowSplashScreenAnimatedIcon.png",
         "smoothed": true,
         "userAdded": false
       },
@@ -4997,6 +4879,7 @@
   "objectsGroups": [],
   "variables": [
     {
+      "folded": true,
       "name": "game",
       "type": "structure",
       "children": [
@@ -5007,6 +4890,7 @@
           "value": 8
         },
         {
+          "folded": true,
           "name": "defaultKeys",
           "type": "structure",
           "children": [
@@ -5134,10 +5018,14 @@
       "value": true
     },
     {
-      "folded": true,
       "name": "data",
       "type": "structure",
       "children": [
+        {
+          "name": "VHSName",
+          "type": "string",
+          "value": ""
+        },
         {
           "folded": true,
           "name": "VHSNumberTake",

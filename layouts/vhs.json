@@ -935,7 +935,6 @@
       "target": "globals"
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1022,77 +1021,6 @@
           },
           "parameters": [
             "sound"
-          ]
-        },
-        {
-          "type": {
-            "value": "PreloadSound"
-          },
-          "parameters": [
-            "",
-            "assets/sounds/VHSCasetteIn.wav"
-          ]
-        }
-      ],
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "PreloadMusic"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/vhs-render-sound.ogg"
-              ]
-            },
-            {
-              "type": {
-                "value": "PreloadSound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/drumroll.ogg"
-              ]
-            },
-            {
-              "type": {
-                "value": "PreloadSound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/kids_cheering.ogg"
-              ]
-            },
-            {
-              "type": {
-                "value": "PreloadSound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/text_typing.wav"
-              ]
-            },
-            {
-              "type": {
-                "value": "PreloadSound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/no-signal.ogg"
-              ]
-            },
-            {
-              "type": {
-                "value": "PreloadSound"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/TextShow.wav"
-              ]
-            }
           ]
         }
       ]
@@ -1246,17 +1174,16 @@
       "actions": [],
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "VarGlobal"
+                "value": "VarGlobalTxt"
               },
               "parameters": [
-                "data.cap",
+                "data.VHSName",
                 "=",
-                "1"
+                "\"Jennifer\""
               ]
             }
           ],
@@ -4132,12 +4059,12 @@
           "conditions": [
             {
               "type": {
-                "value": "VarGlobal"
+                "value": "VarGlobalTxt"
               },
               "parameters": [
-                "data.cap",
+                "data.VHSName",
                 "=",
-                "2"
+                "\"Drawings\""
               ]
             }
           ],
@@ -6525,6 +6452,15 @@
                 },
                 {
                   "type": {
+                    "value": "SetGlobalVariableAsBoolean"
+                  },
+                  "parameters": [
+                    "data.allowContinue",
+                    "True"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "EcrireFichierTxt"
                   },
                   "parameters": [
@@ -6553,16 +6489,17 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "VarGlobal"
+                "value": "VarGlobalTxt"
               },
               "parameters": [
-                "data.cap",
+                "data.VHSName",
                 "=",
-                "3"
+                "\"Listen\""
               ]
             }
           ],
@@ -8347,6 +8284,15 @@
                     },
                     {
                       "type": {
+                        "value": "SetGlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "data.allowContinue",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "EcrireFichierTxt"
                       },
                       "parameters": [
@@ -8393,6 +8339,15 @@
                     },
                     {
                       "type": {
+                        "value": "SetGlobalVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "data.allowContinue",
+                        "True"
+                      ]
+                    },
+                    {
+                      "type": {
                         "value": "EcrireFichierTxt"
                       },
                       "parameters": [
@@ -8420,7 +8375,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -8668,10 +8622,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -8699,10 +8653,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 3,
             "greenX": 0,
             "greenY": 0,
-            "redX": -4,
+            "redX": -2,
             "redY": 1
           },
           "stringParameters": {},
@@ -8730,10 +8684,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 5,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -6,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
@@ -8761,10 +8715,10 @@
           "name": "Effect",
           "doubleParameters": {
             "blueX": 0,
-            "blueY": 6,
+            "blueY": 4,
             "greenX": 0,
             "greenY": 0,
-            "redX": -5,
+            "redX": -3,
             "redY": 1
           },
           "stringParameters": {},
