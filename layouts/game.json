@@ -11010,6 +11010,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Debug",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11316,11 +11317,13 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Caja de texto",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -11443,6 +11446,20 @@
                           "parameters": [
                             "",
                             "\"typewriter\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::AddObjectOpacityTween"
+                          },
+                          "parameters": [
+                            "black",
+                            "Tween",
+                            "\"\"",
+                            "0",
+                            "\"linear\"",
+                            "1000",
+                            ""
                           ]
                         }
                       ]
@@ -12113,6 +12130,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -13230,6 +13248,196 @@
               "parameters": [
                 "NextDialog",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "kid_boy",
+                        "Animation",
+                        "=",
+                        "\"happy\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "kid_boy",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "kid_girl",
+                        "Animation",
+                        "=",
+                        "\"happy\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "kid_girl",
+                        "Animation",
+                        "=",
+                        "\"idle\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "kid_boy",
+                        "Animation",
+                        "=",
+                        "\"happy-c\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "kid_boy",
+                        "Animation",
+                        "=",
+                        "\"idle-c\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "kid_girl",
+                        "Animation",
+                        "=",
+                        "\"happy-c\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "kid_girl",
+                        "Animation",
+                        "=",
+                        "\"idle-c\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "kid_boy",
+                        "Animation",
+                        "=",
+                        "\"happy-l\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "kid_boy",
+                        "Animation",
+                        "=",
+                        "\"idle-l\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Name"
+                      },
+                      "parameters": [
+                        "kid_girl",
+                        "Animation",
+                        "=",
+                        "\"happy-l\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                      },
+                      "parameters": [
+                        "kid_girl",
+                        "Animation",
+                        "=",
+                        "\"idle-l\""
+                      ]
+                    }
+                  ]
+                }
               ]
             }
           ]
@@ -15595,6 +15803,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Tiempo",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -16133,6 +16342,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -16293,6 +16503,17 @@
               "actions": [
                 {
                   "type": {
+                    "value": "FadeMusicVolume"
+                  },
+                  "parameters": [
+                    "",
+                    "0",
+                    "0",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "Tween::AddObjectOpacityTween"
                   },
                   "parameters": [
@@ -16301,19 +16522,8 @@
                     "\"\"",
                     "255",
                     "\"linear\"",
-                    "3000",
+                    "2000",
                     ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "FadeMusicVolume"
-                  },
-                  "parameters": [
-                    "",
-                    "0",
-                    "0",
-                    "3"
                   ]
                 }
               ]
@@ -16329,7 +16539,7 @@
                     "",
                     "\"showend\"",
                     ">",
-                    "4"
+                    "3.5"
                   ]
                 },
                 {
@@ -16357,7 +16567,7 @@
                   "parameters": [
                     "",
                     "\"vhs\"",
-                    "no"
+                    ""
                   ]
                 }
               ]
@@ -16480,7 +16690,7 @@
                   "parameters": [
                     "",
                     "\"vhs\"",
-                    "no"
+                    ""
                   ]
                 }
               ]
@@ -17270,6 +17480,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "VHS",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -21049,19 +21260,11 @@
                     "=",
                     "DialogueTree::CommandParameter(0)"
                   ]
-                },
-                {
-                  "type": {
-                    "value": "SceneVariablePushString"
-                  },
-                  "parameters": [
-                    "minigames.searchObjects.NumbersToIgnore",
-                    "VariableString(minigames.searchObjects.objectToSearchName)"
-                  ]
                 }
               ],
               "events": [
                 {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -21091,6 +21294,22 @@
                       },
                       "parameters": [
                         "\"object\" + ToString(Variable(minigames.searchObjects.objectNum))"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "SceneVariablePushString"
+                      },
+                      "parameters": [
+                        "minigames.searchObjects.NumbersToIgnore",
+                        "VariableString(minigames.searchObjects.objectToSearchName)"
                       ]
                     }
                   ]
@@ -21514,7 +21733,6 @@
                       ]
                     },
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -23005,6 +23223,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -25554,7 +25773,6 @@
               ]
             },
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -25571,7 +25789,6 @@
               "actions": [],
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -25599,7 +25816,6 @@
                   "actions": [],
                   "events": [
                     {
-                      "folded": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -25706,7 +25922,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -25988,7 +26203,7 @@
                                   "parameters": [
                                     "tutorialTXT",
                                     "=",
-                                    "\"Door closed\nIt seems that you will need a key to open it\nWhere can you find it and what will there be behind that door? \""
+                                    "\"Puerta cerrada\nParece que necesitaras una llave para abrirla\n¿Pero donde la encontraras y que crees que hay detrás de la puerta?\""
                                   ]
                                 }
                               ]
@@ -26015,7 +26230,7 @@
                                   "parameters": [
                                     "tutorialTXT",
                                     "=",
-                                    "\"During commercial breaks you can freely move the camera.\nUse commercial breaks for %@!/2MC#'@$@(s8&512=)\""
+                                    "\"Door closed\nIt seems that you will need a key to open it\nWhere can you find it and what will there be behind that door? \""
                                   ]
                                 }
                               ]

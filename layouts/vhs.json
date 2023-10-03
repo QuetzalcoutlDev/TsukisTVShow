@@ -1174,6 +1174,7 @@
       "actions": [],
       "events": [
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4054,7 +4055,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -4663,7 +4663,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -4862,7 +4862,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -5061,7 +5061,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -5260,7 +5260,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -5483,7 +5483,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -5682,7 +5682,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -5881,7 +5881,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -6080,7 +6080,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",
@@ -6279,7 +6279,7 @@
                   },
                   "parameters": [
                     "",
-                    "assets/sounds/VHSCasetteIn.wav",
+                    "assets/sounds/ChangePhoto.ogg",
                     "2",
                     "",
                     "100",

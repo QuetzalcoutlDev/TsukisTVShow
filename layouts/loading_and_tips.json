@@ -180,7 +180,6 @@
       ]
     },
     {
-      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -643,6 +642,25 @@
               "parameters": [
                 "data.firstGame",
                 "="
+              ]
+            },
+            {
+              "type": {
+                "value": "SetGlobalVariableAsBoolean"
+              },
+              "parameters": [
+                "data.allowContinue",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierTxt"
+              },
+              "parameters": [
+                "\"TsukiTVShow\"",
+                "\"data\"",
+                "GlobalVarToJSON(data)"
               ]
             },
             {
