@@ -334,6 +334,12 @@
           ]
         }
       ]
+    },
+    {
+      "folded": true,
+      "name": "delay",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -11035,7 +11041,7 @@
               "parameters": [
                 "debug",
                 "=",
-                "\"capintro time = \" + ToString(TimerElapsedTime(\"capintro\")) + \"\ntsuki_pos = [\" + ToString(tsuki.X()) + \", \" + ToString(tsuki.Y()) + \"]\ndialog = \" + ToString(Variable(dialog)) + \"\npauseDialog = \" + ToString(Variable(pauseDialog)) + \"\nautonextDialog time = \" + ToString(TimerElapsedTime(\"autonextDialog\")) + \"\nChangeTsukiAnim = \" + ToString(Variable(ChangeTsukiAnim)) + \"\nTime time = \" + ToString(TimerElapsedTime(\"time\")) + \"\ncurrentSubScreen = \" + VariableString(currentSubScreen)  + \"\ntutorial time = \" + ToString(TimerElapsedTime(\"tutorial\")) + \"\ncomercialpause time = \" + ToString(TimerElapsedTime(\"comercialpause\")) + \"\nTempData = \" + VariableString(TempData) + \"\nObjectToSearchName = \" + VariableString(minigames.searchObjects.objectToSearchName)  + \"\npauseGame = \" + ToString(Variable(pauseGame)) + \"\ncap = \" + ToString(GlobalVariable(data.cap)) + \" \nshowend = \" + ToString(TimerElapsedTime(\"showend\"))"
+                "\"capintro time = \" + ToString(TimerElapsedTime(\"capintro\")) + \"\ntsuki_pos = [\" + ToString(tsuki.X()) + \", \" + ToString(tsuki.Y()) + \"]\ndialog = \" + ToString(Variable(dialog)) + \"\npauseDialog = \" + ToString(Variable(pauseDialog)) + \"\nautonextDialog time = \" + ToString(TimerElapsedTime(\"autonextDialog\")) + \"\nChangeTsukiAnim = \" + ToString(Variable(ChangeTsukiAnim)) + \"\nTime time = \" + ToString(TimerElapsedTime(\"time\")) + \"\ncurrentSubScreen = \" + VariableString(currentSubScreen)  + \"\ntutorial time = \" + ToString(TimerElapsedTime(\"tutorial\")) + \"\ncomercialpause time = \" + ToString(TimerElapsedTime(\"comercialpause\")) + \"\nTempData = \" + VariableString(TempData) + \"\nObjectToSearchName = \" + VariableString(minigames.searchObjects.objectToSearchName)  + \"\npauseGame = \" + ToString(Variable(pauseGame)) + \"\ncap = \" + ToString(GlobalVariable(data.cap)) + \" \nshowend = \" + ToString(TimerElapsedTime(\"showend\")) + \"\ntutorial value = \" + ToString(Variable(tutorial))"
               ]
             },
             {
@@ -11317,7 +11323,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Caja de texto",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -11465,6 +11470,60 @@
                       ]
                     },
                     {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "inverted": true,
+                            "value": "DialogueTree::HasClippedTextScrollingCompleted"
+                          },
+                          "parameters": []
+                        },
+                        {
+                          "type": {
+                            "value": "CompareTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"typewriter\"",
+                            ">=",
+                            "0.07"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "DialogueTree::ScrollClippedText"
+                          },
+                          "parameters": []
+                        },
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sounds/text_typing.wav",
+                            "2",
+                            "",
+                            "GlobalVariable(game.soundVolume) - 70",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ResetTimer"
+                          },
+                          "parameters": [
+                            "",
+                            "\"typewriter\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -12130,7 +12189,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -12176,6 +12234,35 @@
                         "assets/sounds/kids_cheering.ogg",
                         "3",
                         "",
+                        "GlobalVariable(game.soundVolume)",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DialogueTree::IsCommandCalled"
+                      },
+                      "parameters": [
+                        "\"kids_yey\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sounds/kids_cheering.ogg",
+                        "3",
+                        "",
                         "100",
                         ""
                       ]
@@ -12183,7 +12270,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -12374,7 +12460,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -12795,6 +12880,35 @@
                         "assets/music/carnival.ogg",
                         "0",
                         "yes",
+                        "GlobalVariable(game.musicVolume)",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "DialogueTree::IsCommandCalled"
+                      },
+                      "parameters": [
+                        "\"play_music_a\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/carnival.ogg",
+                        "0",
+                        "yes",
                         "100",
                         ""
                       ]
@@ -12969,19 +13083,6 @@
                     },
                     {
                       "type": {
-                        "value": "PlaySoundCanal"
-                      },
-                      "parameters": [
-                        "",
-                        "assets/sounds/addPoint.wav",
-                        "3",
-                        "",
-                        "20",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
                         "value": "ModVarScene"
                       },
                       "parameters": [
@@ -13006,25 +13107,178 @@
                           ]
                         }
                       ],
-                      "actions": [
+                      "actions": [],
+                      "events": [
                         {
-                          "type": {
-                            "value": "ModVarScene"
-                          },
-                          "parameters": [
-                            "points.Count",
-                            "+",
-                            "Variable(minigames.searchObjects.goods)"
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "minigames.searchObjects.goods",
+                                "=",
+                                "5"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "points.Count",
+                                "-",
+                                "Variable(minigames.searchObjects.fails)"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "points.Count",
+                                "+",
+                                "Variable(minigames.searchObjects.goods) + 3"
+                              ]
+                            }
                           ]
                         },
                         {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "VarScene"
+                              },
+                              "parameters": [
+                                "minigames.searchObjects.goods",
+                                "<",
+                                "5"
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "points.Count",
+                                "-",
+                                "Variable(minigames.searchObjects.fails)"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "points.Count",
+                                "+",
+                                "Variable(minigames.searchObjects.goods)"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "disabled": true,
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
                           "type": {
-                            "value": "ModVarScene"
+                            "value": "PlaySoundCanal"
                           },
                           "parameters": [
-                            "points.Count",
-                            "-",
-                            "Variable(minigames.searchObjects.fails)"
+                            "",
+                            "assets/sounds/addPoint.wav",
+                            "3",
+                            "",
+                            "20",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sounds/addPoint.wav",
+                            "3",
+                            "",
+                            "GlobalVariable(game.soundVolume) - 70",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarSceneTxt"
+                          },
+                          "parameters": [
+                            "currentSubScreen",
+                            "=",
+                            "\"story\""
+                          ]
+                        }
+                      ],
+                      "actions": [],
+                      "events": [
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Or"
+                              },
+                              "parameters": [],
+                              "subInstructions": [
+                                {
+                                  "type": {
+                                    "value": "DialogueTree::WasBranchVisited"
+                                  },
+                                  "parameters": [
+                                    "\"story0\""
+                                  ]
+                                },
+                                {
+                                  "type": {
+                                    "value": "DialogueTree::WasBranchVisited"
+                                  },
+                                  "parameters": [
+                                    "\"story1\""
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarScene"
+                              },
+                              "parameters": [
+                                "points.Count",
+                                "-",
+                                "3"
+                              ]
+                            }
                           ]
                         }
                       ]
@@ -13143,10 +13397,26 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "DialogueTree::IsCommandCalled"
+                        "value": "BuiltinCommonInstructions::Or"
                       },
-                      "parameters": [
-                        "\"comercialPause\""
+                      "parameters": [],
+                      "subInstructions": [
+                        {
+                          "type": {
+                            "value": "DialogueTree::IsCommandCalled"
+                          },
+                          "parameters": [
+                            "\"comercialPause\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "DialogueTree::IsCommandCalled"
+                          },
+                          "parameters": [
+                            "\"commercialPause\""
+                          ]
+                        }
                       ]
                     }
                   ],
@@ -14217,7 +14487,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -14664,7 +14933,6 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -14698,7 +14966,7 @@
                   "parameters": [
                     "points.limit",
                     "=",
-                    "45"
+                    "50"
                   ]
                 }
               ],
@@ -14793,7 +15061,7 @@
                   "parameters": [
                     "points.limit",
                     "=",
-                    "50"
+                    "60"
                   ]
                 },
                 {
@@ -15018,19 +15286,6 @@
                 },
                 {
                   "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/music/carnival_dark_version.ogg",
-                    "0",
-                    "yes",
-                    "100",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "ZoomCamera"
                   },
                   "parameters": [
@@ -15091,6 +15346,47 @@
                   "parameters": [
                     "kidsVisible",
                     "="
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/carnival_dark_version.ogg",
+                        "0",
+                        "yes",
+                        "GlobalVariable(game.musicVolume)",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/carnival_dark_version.ogg",
+                        "0",
+                        "yes",
+                        "100",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -15364,6 +15660,44 @@
                     "assets/sounds/drumroll.ogg",
                     "3",
                     "",
+                    "GlobalVariable(game.soundVolume)",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "disabled": true,
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"capintro\"",
+                    ">=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sounds/drumroll.ogg",
+                    "3",
+                    "",
                     "100",
                     ""
                   ]
@@ -15394,19 +15728,6 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PlayMusicCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/music/afternoon.ogg",
-                    "0",
-                    "yes",
-                    "100",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
                     "value": "SetLayerAmbientLightColor"
                   },
                   "parameters": [
@@ -15431,6 +15752,47 @@
                   "parameters": [
                     "stageLight2",
                     "\"255;255;255\""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/afternoon.ogg",
+                        "0",
+                        "yes",
+                        "GlobalVariable(game.musicVolume)",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/afternoon.ogg",
+                        "0",
+                        "yes",
+                        "100",
+                        ""
+                      ]
+                    }
                   ]
                 }
               ]
@@ -15868,7 +16230,7 @@
                     "",
                     "\"time\"",
                     ">=",
-                    "10"
+                    "10 + delay"
                   ]
                 }
               ],
@@ -16134,7 +16496,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -16342,7 +16703,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -16884,6 +17244,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -17486,7 +17847,6 @@
           "type": "BuiltinCommonInstructions::Group",
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -17563,7 +17923,6 @@
               "colorG": 176,
               "colorR": 74,
               "creationTime": 0,
-              "folded": true,
               "name": "Posición del VHS",
               "source": "",
               "type": "BuiltinCommonInstructions::Group",
@@ -18159,13 +18518,11 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Actividades",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -18181,6 +18538,7 @@
           "actions": [],
           "events": [
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -18207,6 +18565,33 @@
               ]
             },
             {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/music/carnival.ogg",
+                    "0",
+                    "yes",
+                    "GlobalVariable(game.musicVolume)",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -19112,7 +19497,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -19154,7 +19538,6 @@
           ],
           "events": [
             {
-              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -19171,7 +19554,6 @@
               "actions": [],
               "events": [
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -19533,7 +19915,6 @@
                   ]
                 },
                 {
-                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -19699,6 +20080,14 @@
                           "actions": [
                             {
                               "type": {
+                                "value": "VariableClearChildren"
+                              },
+                              "parameters": [
+                                "minigames.searchObjects.NumbersToIgnore"
+                              ]
+                            },
+                            {
+                              "type": {
                                 "value": "ModVarScene"
                               },
                               "parameters": [
@@ -19725,14 +20114,6 @@
                                 "minigames.searchObjects.objectsToSearch",
                                 "=",
                                 "5"
-                              ]
-                            },
-                            {
-                              "type": {
-                                "value": "VariableClearChildren"
-                              },
-                              "parameters": [
-                                "minigames.searchObjects.NumbersToIgnore"
                               ]
                             }
                           ]
@@ -21096,7 +21477,6 @@
           ]
         },
         {
-          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -21264,7 +21644,6 @@
               ],
               "events": [
                 {
-                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -21272,7 +21651,7 @@
                         "value": "VariableChildExists"
                       },
                       "parameters": [
-                        "minigames.searchObjects.NumbersToIgnore",
+                        "minigames.searchObjects.NumbersToIgnore[minigames.searchObjects.objectNum]",
                         "VariableString(minigames.searchObjects.objectToSearchName)"
                       ]
                     }
@@ -21299,7 +21678,6 @@
                   ]
                 },
                 {
-                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [],
                   "actions": [
@@ -22106,6 +22484,153 @@
               },
               "parameters": [
                 "MinigamesTXT"
+              ]
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"searchObjects\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "delay",
+                    "=",
+                    "10"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"charla\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "delay",
+                    "=",
+                    "5"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"story\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ModVarScene"
+                  },
+                  "parameters": [
+                    "delay",
+                    "=",
+                    "15"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"searchObjects\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"charla\""
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "VarSceneTxt"
+                  },
+                  "parameters": [
+                    "currentSubScreen",
+                    "=",
+                    "\"story\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarScene"
+              },
+              "parameters": [
+                "delay",
+                "=",
+                "0"
               ]
             }
           ]
@@ -23660,6 +24185,37 @@
                         "assets/music/afternoon.ogg",
                         "0",
                         "yes",
+                        "GlobalVariable(game.musicVolume)",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarGlobal"
+                      },
+                      "parameters": [
+                        "data.cap",
+                        "=",
+                        "1"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/music/afternoon.ogg",
+                        "0",
+                        "yes",
                         "100",
                         ""
                       ]
@@ -23683,6 +24239,7 @@
                   "actions": [],
                   "events": [
                     {
+                      "disabled": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -23713,6 +24270,7 @@
                       ]
                     },
                     {
+                      "disabled": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -23741,6 +24299,71 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "time.minutes",
+                            "<",
+                            "30"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlayMusicCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/music/afternoon.ogg",
+                            "0",
+                            "yes",
+                            "GlobalVariable(game.musicVolume)",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "VarScene"
+                          },
+                          "parameters": [
+                            "time.minutes",
+                            ">",
+                            "30"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlayMusicCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/music/afternoon_dark_version.ogg",
+                            "0",
+                            "yes",
+                            "GlobalVariable(game.musicVolume)",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [],
+                      "actions": []
                     }
                   ]
                 }
@@ -23789,19 +24412,6 @@
                     "232",
                     "642",
                     "\"ui\""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySoundCanal"
-                  },
-                  "parameters": [
-                    "",
-                    "assets/sounds/addPoint.wav",
-                    "3",
-                    "",
-                    "20",
-                    ""
                   ]
                 },
                 {
@@ -23935,6 +24545,47 @@
                     "\"InflarGlobos\""
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sounds/addPoint.wav",
+                        "3",
+                        "",
+                        "GlobalVariable(game.soundVolume) - 70",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sounds/addPoint.wav",
+                        "3",
+                        "",
+                        "20",
+                        ""
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -24051,6 +24702,7 @@
                       ],
                       "events": [
                         {
+                          "disabled": true,
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
                             {
@@ -24098,35 +24750,7 @@
                               ]
                             }
                           ]
-                        }
-                      ]
-                    },
-                    {
-                      "type": "BuiltinCommonInstructions::Standard",
-                      "conditions": [
-                        {
-                          "type": {
-                            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
-                          },
-                          "parameters": [
-                            "InflarGlobo",
-                            ""
-                          ]
-                        }
-                      ],
-                      "actions": [
-                        {
-                          "type": {
-                            "value": "SetObjectVariableAsBoolean"
-                          },
-                          "parameters": [
-                            "tsuki",
-                            "push",
-                            "True"
-                          ]
-                        }
-                      ],
-                      "events": [
+                        },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
                           "conditions": [
@@ -24168,7 +24792,134 @@
                                 "",
                                 "\"assets/sounds/inflated/\" + ToString(RandomInRange(1, 2)) + \".ogg\"",
                                 "3",
+                                "GlobalVariable(game.soundVolume)",
+                                "1",
+                                "3",
+                                ""
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                          },
+                          "parameters": [
+                            "InflarGlobo",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetObjectVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "tsuki",
+                            "push",
+                            "True"
+                          ]
+                        }
+                      ],
+                      "events": [
+                        {
+                          "disabled": true,
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "globo",
+                                "progress",
+                                "+",
+                                "2"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                              },
+                              "parameters": [
+                                "GloboProgress",
+                                "+",
+                                "2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlayAudioWithString::PlaySoundStringOnChannel"
+                              },
+                              "parameters": [
+                                "",
+                                "\"assets/sounds/inflated/\" + ToString(RandomInRange(1, 2)) + \".ogg\"",
+                                "3",
                                 "100",
+                                "1",
+                                "3",
+                                ""
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "BuiltinCommonInstructions::Standard",
+                          "conditions": [
+                            {
+                              "type": {
+                                "value": "BuiltinCommonInstructions::Once"
+                              },
+                              "parameters": []
+                            }
+                          ],
+                          "actions": [
+                            {
+                              "type": {
+                                "value": "ModVarObjet"
+                              },
+                              "parameters": [
+                                "globo",
+                                "progress",
+                                "+",
+                                "2"
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                              },
+                              "parameters": [
+                                "GloboProgress",
+                                "+",
+                                "2",
+                                ""
+                              ]
+                            },
+                            {
+                              "type": {
+                                "value": "PlayAudioWithString::PlaySoundStringOnChannel"
+                              },
+                              "parameters": [
+                                "",
+                                "\"assets/sounds/inflated/\" + ToString(RandomInRange(1, 2)) + \".ogg\"",
+                                "3",
+                                "GlobalVariable(game.soundVolume)",
                                 "1",
                                 "3",
                                 ""
@@ -24429,6 +25180,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -24481,6 +25233,8 @@
                   ]
                 },
                 {
+                  "disabled": true,
+                  "folded": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -24704,10 +25458,236 @@
                       ]
                     }
                   ]
+                },
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "SceneVariableAsBoolean"
+                      },
+                      "parameters": [
+                        "pauseGame",
+                        "="
+                      ]
+                    }
+                  ],
+                  "actions": [],
+                  "events": [
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "KeyFromTextPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "GlobalVariableString(game.defaultKeys.minigames.action2)"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sounds/pop2.ogg",
+                            "2",
+                            "",
+                            "GlobalVariable(game.soundVolume)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "GloboTouchParticles",
+                            "globo.CenterX()",
+                            "globo.CenterY()",
+                            "\"tsuki\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "minigames.inflarGlobos.goods",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "globo",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "globo",
+                            "tsuki.PointX(\"globo\")",
+                            "tsuki.PointY(\"globo\")",
+                            "\"tsuki\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "globo",
+                            "progress",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                          },
+                          "parameters": [
+                            "GloboProgress",
+                            "=",
+                            "0",
+                            ""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "SystemInfo::HasTouchScreen"
+                          },
+                          "parameters": [
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                          },
+                          "parameters": [
+                            "completeGlobo",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "BuiltinCommonInstructions::Once"
+                          },
+                          "parameters": []
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySoundCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sounds/pop2.ogg",
+                            "2",
+                            "",
+                            "GlobalVariable(game.soundVolume)",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "GloboTouchParticles",
+                            "globo.CenterX()",
+                            "globo.CenterY()",
+                            "\"tsuki\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarScene"
+                          },
+                          "parameters": [
+                            "minigames.inflarGlobos.goods",
+                            "+",
+                            "1"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Delete"
+                          },
+                          "parameters": [
+                            "globo",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Create"
+                          },
+                          "parameters": [
+                            "",
+                            "globo",
+                            "tsuki.PointX(\"globo\")",
+                            "tsuki.PointY(\"globo\")",
+                            "\"tsuki\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarObjet"
+                          },
+                          "parameters": [
+                            "globo",
+                            "progress",
+                            "=",
+                            "0"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PanelSpriteContinuousBar::PanelSpriteContinuousBar::SetValue"
+                          },
+                          "parameters": [
+                            "GloboProgress",
+                            "=",
+                            "0",
+                            ""
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -24814,6 +25794,44 @@
                   ]
                 },
                 {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "AnimatableCapability::AnimatableBehavior::Index"
+                      },
+                      "parameters": [
+                        "globo",
+                        "Animation",
+                        "=",
+                        "6"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "BuiltinCommonInstructions::Once"
+                      },
+                      "parameters": []
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlaySoundCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sounds/balloon-pop.ogg",
+                        "2",
+                        "",
+                        "GlobalVariable(game.soundVolume)",
+                        ""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
                   "type": "BuiltinCommonInstructions::Standard",
                   "conditions": [
                     {
@@ -24966,6 +25984,7 @@
           ]
         },
         {
+          "disabled": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -25060,6 +26079,115 @@
                 "0",
                 "yes",
                 "100",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"InflarGlobosOut\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareTimer"
+              },
+              "parameters": [
+                "",
+                "\"InflarGlobosOut\"",
+                ">=",
+                "1.7"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "tsuki",
+                "allowInflar",
+                "False"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetObjectVariableAsBoolean"
+              },
+              "parameters": [
+                "tsuki",
+                "interact",
+                "True"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::AddObjectOpacityTween"
+              },
+              "parameters": [
+                "black",
+                "Tween",
+                "\"\"",
+                "0",
+                "\"linear\"",
+                "1000",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "tsuki",
+                "Animation",
+                "=",
+                "\"idle\""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"InflarGlobosStart\""
+              ]
+            },
+            {
+              "type": {
+                "value": "RemoveTimer"
+              },
+              "parameters": [
+                "",
+                "\"InflarGlobos\""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/carnival.ogg",
+                "0",
+                "yes",
+                "GlobalVariable(game.musicVolume)",
                 ""
               ]
             },
@@ -26297,6 +27425,7 @@
                       ]
                     },
                     {
+                      "disabled": true,
                       "type": "BuiltinCommonInstructions::Standard",
                       "conditions": [
                         {
@@ -26329,6 +27458,119 @@
                             "1",
                             "yes",
                             "30",
+                            ""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenCameraZoom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"zoom\"",
+                            "3",
+                            "\"backstage\"",
+                            "1000",
+                            "\"easeOutQuad\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenCameraZoom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"zoom\"",
+                            "3",
+                            "\"stage\"",
+                            "1000",
+                            "\"easeOutQuad\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenCameraZoom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"zoom\"",
+                            "3",
+                            "\"Lighting\"",
+                            "1000",
+                            "\"easeOutQuad\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenCameraZoom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"zoom\"",
+                            "3",
+                            "\"tsuki\"",
+                            "1000",
+                            "\"easeOutQuad\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "Tween::TweenCameraZoom"
+                          },
+                          "parameters": [
+                            "",
+                            "\"zoom\"",
+                            "3",
+                            "\"kids\"",
+                            "1000",
+                            "\"easeOutQuad\""
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "ModVarSceneTxt"
+                          },
+                          "parameters": [
+                            "currentSubScreen",
+                            "=",
+                            "\"normal\""
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                          },
+                          "parameters": [
+                            "go_back",
+                            ""
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "SetSceneVariableAsBoolean"
+                          },
+                          "parameters": [
+                            "AllowMove",
+                            "True"
+                          ]
+                        },
+                        {
+                          "type": {
+                            "value": "PlayMusicCanal"
+                          },
+                          "parameters": [
+                            "",
+                            "assets/sounds/vhs-render-sound.ogg",
+                            "1",
+                            "yes",
+                            "GlobalVariable(game.soundVolume) - 70",
                             ""
                           ]
                         },
@@ -26681,6 +27923,112 @@
                         "assets/sounds/vhs-render-sound.ogg",
                         "1",
                         "yes",
+                        "GlobalVariable(game.soundVolume) - 70",
+                        ""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraZoom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"zoom\"",
+                        "3",
+                        "\"backstage\"",
+                        "1000",
+                        "\"linear\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraZoom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"zoom\"",
+                        "3",
+                        "\"stage\"",
+                        "1000",
+                        "\"linear\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraZoom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"zoom\"",
+                        "3",
+                        "\"tsuki\"",
+                        "1000",
+                        "\"linear\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraZoom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"zoom\"",
+                        "3",
+                        "\"Lighting\"",
+                        "1000",
+                        "\"linear\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenCameraZoom"
+                      },
+                      "parameters": [
+                        "",
+                        "\"zoom\"",
+                        "3",
+                        "\"kids\"",
+                        "1000",
+                        "\"linear\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "ModVarSceneTxt"
+                      },
+                      "parameters": [
+                        "currentSubScreen",
+                        "=",
+                        "\"normal\""
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "disabled": true,
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "VarSceneTxt"
+                      },
+                      "parameters": [
+                        "currentSubScreen",
+                        "=",
+                        "\"secretDoor\""
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "PlayMusicCanal"
+                      },
+                      "parameters": [
+                        "",
+                        "assets/sounds/vhs-render-sound.ogg",
+                        "1",
+                        "yes",
                         "30",
                         ""
                       ]
@@ -26803,6 +28151,7 @@
               ]
             },
             {
+              "disabled": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -26834,6 +28183,43 @@
                     "3",
                     "",
                     "100",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareTimer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"resumeshow\"",
+                    ">=",
+                    "3"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySoundCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "assets/sounds/drumroll.ogg",
+                    "3",
+                    "",
+                    "GlobalVariable(game.soundVolume)",
                     ""
                   ]
                 }

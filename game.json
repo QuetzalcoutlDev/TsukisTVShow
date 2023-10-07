@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.1.3",
+    "version": "0.1.4",
     "name": "Tsuki's TV Show",
     "description": "Tsuki’s TV Show is a game of psychological horror and mascot horror, created for the Monarca Game Jam 2023\n\nControls:\n\n-Mouse\n-Keyboard\n\nSee key configuration menu for mapping",
     "author": "Dazzle Team",

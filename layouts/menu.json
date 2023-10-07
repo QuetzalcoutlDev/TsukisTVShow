@@ -4122,6 +4122,7 @@
       "target": "globals"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -4235,19 +4236,6 @@
           "parameters": [
             "glitch"
           ]
-        },
-        {
-          "type": {
-            "value": "PlayMusicCanal"
-          },
-          "parameters": [
-            "",
-            "assets/music/my_tv_show_menu-theme.ogg",
-            "0",
-            "yes",
-            "100",
-            ""
-          ]
         }
       ],
       "events": [
@@ -4286,6 +4274,45 @@
               },
               "parameters": [
                 "configKeys",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "disabled": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/my_tv_show_menu-theme.ogg",
+                "0",
+                "yes",
+                "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "assets/music/my_tv_show_menu-theme.ogg",
+                "0",
+                "yes",
+                "GlobalVariable(game.musicVolume)",
                 ""
               ]
             }
@@ -4345,6 +4372,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Efectos visuales",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -4546,6 +4574,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Idioma",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -5144,6 +5173,7 @@
       "parameters": []
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -5661,6 +5691,34 @@
         }
       ],
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVolumeMusicCanal"
+              },
+              "parameters": [
+                "",
+                "0",
+                "=",
+                "GlobalVariable(game.musicVolume)"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVolumeMusicCanal"
+              },
+              "parameters": [
+                "",
+                "1",
+                "=",
+                "GlobalVariable(game.musicVolume)"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -7892,7 +7950,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configuración de barras",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7942,7 +7999,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configuración de Checks",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8383,7 +8439,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configuración de idioma y tiempo de espera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8783,7 +8838,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Configuración de teclado",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
