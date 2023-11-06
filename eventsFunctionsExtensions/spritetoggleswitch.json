@@ -2668,7 +2668,6 @@
           "adaptCollisionMaskAutomatically": false,
           "assetStoreId": "",
           "name": "State",
-          "tags": "",
           "type": "Sprite",
           "updateIfNotVisible": false,
           "variables": [],
@@ -2717,7 +2716,15 @@
             }
           ]
         }
-      ]
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "State"
+          }
+        ]
+      }
     }
   ]
 }

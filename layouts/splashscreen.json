@@ -95,7 +95,6 @@
       "italic": false,
       "name": "splashText",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -115,7 +114,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "monarca",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -195,6 +193,17 @@
       ]
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "splashText"
+      },
+      {
+        "objectName": "monarca"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -913,6 +922,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",

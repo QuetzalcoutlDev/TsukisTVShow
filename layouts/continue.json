@@ -126,7 +126,6 @@
       "italic": false,
       "name": "continue",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -145,7 +144,6 @@
     {
       "assetStoreId": "",
       "name": "continue2",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -202,7 +200,6 @@
     {
       "assetStoreId": "",
       "name": "menu",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -257,6 +254,20 @@
       }
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "continue"
+      },
+      {
+        "objectName": "continue2"
+      },
+      {
+        "objectName": "menu"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -702,6 +713,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",

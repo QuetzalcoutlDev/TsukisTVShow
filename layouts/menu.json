@@ -654,7 +654,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "stage",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -714,7 +713,6 @@
     {
       "assetStoreId": "",
       "name": "light",
-      "tags": "",
       "type": "Lighting::LightObject",
       "variables": [],
       "effects": [],
@@ -730,7 +728,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "logo",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -790,7 +787,6 @@
     {
       "assetStoreId": "",
       "name": "newGame",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -847,7 +843,6 @@
     {
       "assetStoreId": "",
       "name": "continue",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [
@@ -914,7 +909,6 @@
     {
       "assetStoreId": "",
       "name": "config",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -971,7 +965,6 @@
     {
       "assetStoreId": "",
       "name": "about",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1028,7 +1021,6 @@
     {
       "assetStoreId": "",
       "name": "exit",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1085,7 +1077,6 @@
     {
       "assetStoreId": "",
       "name": "configback",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1142,7 +1133,6 @@
     {
       "assetStoreId": "",
       "name": "configkeysback",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1199,7 +1189,6 @@
     {
       "assetStoreId": "",
       "name": "configAboutback",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1256,7 +1245,6 @@
     {
       "assetStoreId": "",
       "name": "yes",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1313,7 +1301,6 @@
     {
       "assetStoreId": "",
       "name": "no",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1370,7 +1357,6 @@
     {
       "assetStoreId": "",
       "name": "configKeys",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1427,7 +1413,6 @@
     {
       "assetStoreId": "",
       "name": "NextDialogKey",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1484,7 +1469,6 @@
     {
       "assetStoreId": "",
       "name": "SkipTextKey",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1541,7 +1525,6 @@
     {
       "assetStoreId": "",
       "name": "Option1Key",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1598,7 +1581,6 @@
     {
       "assetStoreId": "",
       "name": "Option2Key",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1655,7 +1637,6 @@
     {
       "assetStoreId": "",
       "name": "Option3Key",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1712,7 +1693,6 @@
     {
       "assetStoreId": "",
       "name": "Option4Key",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1769,7 +1749,6 @@
     {
       "assetStoreId": "",
       "name": "PauseKey",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1826,7 +1805,6 @@
     {
       "assetStoreId": "",
       "name": "MoveLeftKey",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1883,7 +1861,6 @@
     {
       "assetStoreId": "",
       "name": "MoveRightKey",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1940,7 +1917,6 @@
     {
       "assetStoreId": "",
       "name": "ActionKey",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -1997,7 +1973,6 @@
     {
       "assetStoreId": "",
       "name": "Action2Key",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2054,7 +2029,6 @@
     {
       "assetStoreId": "",
       "name": "delete",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2111,7 +2085,6 @@
     {
       "assetStoreId": "",
       "name": "github",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2168,7 +2141,6 @@
     {
       "assetStoreId": "",
       "name": "QuetzalTwitter",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2225,7 +2197,6 @@
     {
       "assetStoreId": "",
       "name": "QuetzalMastodon",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2282,7 +2253,6 @@
     {
       "assetStoreId": "",
       "name": "QuetzalYT",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2339,7 +2309,6 @@
     {
       "assetStoreId": "",
       "name": "FegoYT",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2396,7 +2365,6 @@
     {
       "assetStoreId": "",
       "name": "FegoSpotify",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2453,7 +2421,6 @@
     {
       "assetStoreId": "",
       "name": "itch",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -2513,7 +2480,6 @@
       "italic": false,
       "name": "version",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2548,7 +2514,6 @@
       "italic": false,
       "name": "WaitInput",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2583,7 +2548,6 @@
       "italic": false,
       "name": "configTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2618,7 +2582,6 @@
       "italic": false,
       "name": "configKeysTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2653,7 +2616,6 @@
       "italic": false,
       "name": "KeysTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2688,7 +2650,6 @@
       "italic": false,
       "name": "YesNoTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2723,7 +2684,6 @@
       "italic": false,
       "name": "fpsTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2758,7 +2718,6 @@
       "italic": false,
       "name": "WindowTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2793,7 +2752,6 @@
       "italic": false,
       "name": "VisualsTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2828,7 +2786,6 @@
       "italic": false,
       "name": "RGBTItle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2863,7 +2820,6 @@
       "italic": false,
       "name": "VignetteTVTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2898,7 +2854,6 @@
       "italic": false,
       "name": "languageTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2933,7 +2888,6 @@
       "italic": false,
       "name": "autoNextDialogTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -2968,7 +2922,6 @@
       "italic": false,
       "name": "languageOption",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [
@@ -3026,7 +2979,6 @@
       "italic": false,
       "name": "autoNextDialogText",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [
@@ -3089,7 +3041,6 @@
       "italic": false,
       "name": "musicVolTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -3124,7 +3075,6 @@
       "italic": false,
       "name": "soundVolTitle",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -3159,7 +3109,6 @@
       "italic": false,
       "name": "AboutText",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -3194,7 +3143,6 @@
       "italic": false,
       "name": "CreatorsText",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -3226,7 +3174,6 @@
     {
       "assetStoreId": "",
       "name": "FullscreenCheck",
-      "tags": "",
       "type": "SpriteToggleSwitch::SpriteToggleSwitch",
       "variables": [],
       "effects": [],
@@ -3342,7 +3289,6 @@
     {
       "assetStoreId": "",
       "name": "FPSCheck",
-      "tags": "",
       "type": "SpriteToggleSwitch::SpriteToggleSwitch",
       "variables": [],
       "effects": [],
@@ -3458,7 +3404,6 @@
     {
       "assetStoreId": "",
       "name": "RGBCheck",
-      "tags": "",
       "type": "SpriteToggleSwitch::SpriteToggleSwitch",
       "variables": [],
       "effects": [],
@@ -3574,7 +3519,6 @@
     {
       "assetStoreId": "",
       "name": "VignetteTVCheck",
-      "tags": "",
       "type": "SpriteToggleSwitch::SpriteToggleSwitch",
       "variables": [],
       "effects": [],
@@ -3690,7 +3634,6 @@
     {
       "assetStoreId": "",
       "name": "languageButtonRight",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -3747,7 +3690,6 @@
     {
       "assetStoreId": "",
       "name": "languageButtonLeft",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -3804,7 +3746,6 @@
     {
       "assetStoreId": "",
       "name": "autoNextDialogButtonRight",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -3861,7 +3802,6 @@
     {
       "assetStoreId": "",
       "name": "autoNextDialogButtonLeft",
-      "tags": "",
       "type": "PanelSpriteButton::PanelSpriteButton",
       "variables": [],
       "effects": [],
@@ -3918,7 +3858,6 @@
     {
       "assetStoreId": "",
       "name": "musicVolBar",
-      "tags": "",
       "type": "PanelSpriteSlider::PanelSpriteSlider",
       "variables": [],
       "effects": [],
@@ -3981,7 +3920,6 @@
     {
       "assetStoreId": "",
       "name": "soundVolBar",
-      "tags": "",
       "type": "PanelSpriteSlider::PanelSpriteSlider",
       "variables": [],
       "effects": [],
@@ -4045,7 +3983,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "monarca",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4113,6 +4050,200 @@
       ]
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "stage"
+      },
+      {
+        "objectName": "light"
+      },
+      {
+        "objectName": "logo"
+      },
+      {
+        "objectName": "newGame"
+      },
+      {
+        "objectName": "continue"
+      },
+      {
+        "objectName": "config"
+      },
+      {
+        "objectName": "about"
+      },
+      {
+        "objectName": "exit"
+      },
+      {
+        "objectName": "configback"
+      },
+      {
+        "objectName": "configkeysback"
+      },
+      {
+        "objectName": "configAboutback"
+      },
+      {
+        "objectName": "yes"
+      },
+      {
+        "objectName": "no"
+      },
+      {
+        "objectName": "configKeys"
+      },
+      {
+        "objectName": "NextDialogKey"
+      },
+      {
+        "objectName": "SkipTextKey"
+      },
+      {
+        "objectName": "Option1Key"
+      },
+      {
+        "objectName": "Option2Key"
+      },
+      {
+        "objectName": "Option3Key"
+      },
+      {
+        "objectName": "Option4Key"
+      },
+      {
+        "objectName": "PauseKey"
+      },
+      {
+        "objectName": "MoveLeftKey"
+      },
+      {
+        "objectName": "MoveRightKey"
+      },
+      {
+        "objectName": "ActionKey"
+      },
+      {
+        "objectName": "Action2Key"
+      },
+      {
+        "objectName": "delete"
+      },
+      {
+        "objectName": "github"
+      },
+      {
+        "objectName": "QuetzalTwitter"
+      },
+      {
+        "objectName": "QuetzalMastodon"
+      },
+      {
+        "objectName": "QuetzalYT"
+      },
+      {
+        "objectName": "FegoYT"
+      },
+      {
+        "objectName": "FegoSpotify"
+      },
+      {
+        "objectName": "itch"
+      },
+      {
+        "objectName": "version"
+      },
+      {
+        "objectName": "WaitInput"
+      },
+      {
+        "objectName": "configTitle"
+      },
+      {
+        "objectName": "configKeysTitle"
+      },
+      {
+        "objectName": "KeysTitle"
+      },
+      {
+        "objectName": "YesNoTitle"
+      },
+      {
+        "objectName": "fpsTitle"
+      },
+      {
+        "objectName": "WindowTitle"
+      },
+      {
+        "objectName": "VisualsTitle"
+      },
+      {
+        "objectName": "RGBTItle"
+      },
+      {
+        "objectName": "VignetteTVTitle"
+      },
+      {
+        "objectName": "languageTitle"
+      },
+      {
+        "objectName": "autoNextDialogTitle"
+      },
+      {
+        "objectName": "languageOption"
+      },
+      {
+        "objectName": "autoNextDialogText"
+      },
+      {
+        "objectName": "musicVolTitle"
+      },
+      {
+        "objectName": "soundVolTitle"
+      },
+      {
+        "objectName": "AboutText"
+      },
+      {
+        "objectName": "CreatorsText"
+      },
+      {
+        "objectName": "FullscreenCheck"
+      },
+      {
+        "objectName": "FPSCheck"
+      },
+      {
+        "objectName": "RGBCheck"
+      },
+      {
+        "objectName": "VignetteTVCheck"
+      },
+      {
+        "objectName": "languageButtonRight"
+      },
+      {
+        "objectName": "languageButtonLeft"
+      },
+      {
+        "objectName": "autoNextDialogButtonRight"
+      },
+      {
+        "objectName": "autoNextDialogButtonLeft"
+      },
+      {
+        "objectName": "musicVolBar"
+      },
+      {
+        "objectName": "soundVolBar"
+      },
+      {
+        "objectName": "monarca"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -9269,6 +9400,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",

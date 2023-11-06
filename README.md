@@ -11,10 +11,11 @@ This game is just a demo, so it can be seen that some features are missing, and 
 You can go directly to download the game from itch.io or play it from gd.games
 itch.io -> https://quetzalcoutl.itch.io/tsukis-tv-show
 gd.games -> https://gd.games/quetzalcoutldev/tsuki-s-tv-show
+Gamejolt -> https://gamejolt.com/games/tsukis-tv-show/851677
 
 ## Installing from source
 
-First of all, you need to have GDevelop 5.2.172 or higher installed
+First of all, you need to have GDevelop 5.3.180 or higher installed
 
 For more information:
 https://wiki.gdevelop.io/gdevelop5/publishing/

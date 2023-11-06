@@ -49,6 +49,23 @@
             "\"1155637425209618504\"",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "DiscordRichPresence::UpdateRichPresence"
+          },
+          "parameters": [
+            "",
+            "\"Playing\"",
+            "\"In game\"",
+            "1507665886",
+            "",
+            "\"tsuki\"",
+            "\"Tsuki's TV Show\"",
+            "\"\"",
+            "\"\"",
+            ""
+          ]
         }
       ],
       "events": [
@@ -165,26 +182,6 @@
                 "1",
                 "yes",
                 "GlobalVariable(game.musicVolume) - 60",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "PlayMusicCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/vhs-render-sound.ogg",
-                "1",
-                "yes",
-                "30",
                 ""
               ]
             }
@@ -396,82 +393,6 @@
       "actions": [],
       "events": [
         {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::Value"
-              },
-              "parameters": [
-                "glitch",
-                "Opacity",
-                "=",
-                "255"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/no-signal.ogg",
-                "2",
-                "",
-                "40",
-                ""
-              ]
-            }
-          ]
-        },
-        {
-          "disabled": true,
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "OpacityCapability::OpacityBehavior::Value"
-              },
-              "parameters": [
-                "glitch",
-                "Opacity",
-                "<",
-                "200"
-              ]
-            },
-            {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "PlaySoundCanal"
-              },
-              "parameters": [
-                "",
-                "assets/sounds/no-signal.ogg",
-                "2",
-                "",
-                "25",
-                ""
-              ]
-            }
-          ]
-        },
-        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -574,38 +495,6 @@
           "parameters": [
             "",
             "2"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "DiscordRichPresence::UpdateRichPresence"
-          },
-          "parameters": [
-            "",
-            "\"Playing\"",
-            "\"In game\"",
-            "1507665886",
-            "",
-            "\"tsuki\"",
-            "\"Tsuki's TV Show\"",
-            "\"\"",
-            "\"\"",
-            ""
           ]
         }
       ]

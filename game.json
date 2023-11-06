@@ -19,7 +19,7 @@
     "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
-    "version": "0.1.4",
+    "version": "0.1.5",
     "name": "Tsuki's TV Show",
     "description": "Tsuki’s TV Show is a game of psychological horror and mascot horror, created for the Monarca Game Jam 2023\n\nControls:\n\n-Mouse\n-Keyboard\n\nSee key configuration menu for mapping",
     "author": "Dazzle Team",
@@ -3001,7 +3001,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "vignette",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3062,7 +3061,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "vignette2",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3125,7 +3123,6 @@
       "italic": false,
       "name": "fps",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -3165,7 +3162,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "black",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3231,7 +3227,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "cursor",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3292,7 +3287,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "static",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -3688,7 +3682,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "glitch",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4829,7 +4822,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "black_alpha",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4887,6 +4879,35 @@
       ]
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "vignette"
+      },
+      {
+        "objectName": "vignette2"
+      },
+      {
+        "objectName": "fps"
+      },
+      {
+        "objectName": "black"
+      },
+      {
+        "objectName": "cursor"
+      },
+      {
+        "objectName": "static"
+      },
+      {
+        "objectName": "glitch"
+      },
+      {
+        "objectName": "black_alpha"
+      }
+    ]
+  },
   "objectsGroups": [],
   "variables": [
     {

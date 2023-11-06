@@ -128,7 +128,6 @@
       "italic": false,
       "name": "CenterTXT",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -163,7 +162,6 @@
       "italic": false,
       "name": "BottomTXT",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -198,7 +196,6 @@
       "italic": false,
       "name": "LeftTXT",
       "smoothed": true,
-      "tags": "",
       "type": "TextObject::Text",
       "underlined": false,
       "variables": [],
@@ -231,7 +228,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "dibujos",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -676,7 +672,6 @@
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
       "name": "sound",
-      "tags": "",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -926,6 +921,26 @@
       ]
     }
   ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "CenterTXT"
+      },
+      {
+        "objectName": "BottomTXT"
+      },
+      {
+        "objectName": "LeftTXT"
+      },
+      {
+        "objectName": "dibujos"
+      },
+      {
+        "objectName": "sound"
+      }
+    ]
+  },
   "events": [
     {
       "type": "BuiltinCommonInstructions::Link",
@@ -16024,6 +16039,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
       "name": "Tween",
